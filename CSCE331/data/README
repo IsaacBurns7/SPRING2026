@@ -1,0 +1,26 @@
+
+* NOTE: These are the typical data that will be used to test your code 
+  for grading. Other more obscure test cases may be used during grading. 
+
+1. CSV data set #1, with different quote character and delimiters, 
+   and how to be rendered
+
+dat-doublequote-comma.csv
+dat-doublequote-tab.csv
+
+dat.png   # Note: no need to show column and row legend (A, B, C,... 1, 2, 3)
+
+2. CSV data set #2,  with different quote character and delimiters, 
+   and how to be rendered
+
+dat2-doublequote-comma.csv
+dat2-doublequote-tab.csv
+dat2-singlequote-tab.csv
+
+dat2.png   # Note: no need to show column and row legend (A, B, C,... 1, 2, 3)
+
+3. markdown example text, and how to be rendered (in github, click on [raw])
+
+markdown.md  : when you click, you will see the correct rendering in github.
+markdown.pdf : a rough appearance
+

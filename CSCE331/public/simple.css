@@ -1,0 +1,31 @@
+<STYLE TYPE="text/css" MEDIA=screen>
+<!--
+ 	BODY  { background: white; color: black ; font-family: sans-serif}
+        P EM  { background: yellow; color: black; font-family: sans-serif }
+        P { background: white; color: black; font-family: sans-serif }
+	DIV { font-family: sans-serif }
+	H1    { font-family: sans-serif }
+	H2    { font-family: sans-serif }
+	H3    { font-family: sans-serif }
+	B     { font-family: sans-serif }
+	TD    { font-family: sans-serif }
+	LI    { font-family: sans-serif }
+	PRE { font-family: courier }
+	PRE.code {
+		color: #000;
+    		background-color: #ddd;
+    		font-variant: courier;
+    		font-size: 90%;
+    		font-weight: 500;
+		padding: 10;
+	      }
+	A     { font-family: sans-serif ; font-style: normal}
+	table, th, td, tr { 
+		border-collapse: collapse;
+		border: 1px solid black;
+		padding: 5;
+ 	}
+	BLOCKQUOTE { font-family: sans-serif ; font-style: normal}
+        .note { margin-left: 5em; margin-right: 5em }
+-->
+</STYLE>
