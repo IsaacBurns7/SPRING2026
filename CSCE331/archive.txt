@@ -1,0 +1,28 @@
+/**
+ * Alternative CSV parser using state machine approach
+ * Not currently used - see my_fgetcsv2() for regex-based implementation
+ * Kept for reference/comparison
+ */
+function my_fgetcsv($line, $delimiter = ",", $enclosure = '"'){
+    $fields = [];
+    $field = '';
+    $in_quotes = false;
+    $len = strlen($line);
+
+    for ($i = 0; $i < $len; $i++) {
+        $char = $line[$i];
+        if ($char === $enclosure) {
+            $in_quotes = !$in_quotes; // Toggle in_quotes if regular quote
+        } elseif ($char === $delimiter && !$in_quotes) {
+            $fields[] = $field;
+            $field = '';
+        } else {
+            $field .= $char;
+        }
+    }
+
+    //add in the last field 
+    $fields[] = $field;
+
+    return $fields;
+}

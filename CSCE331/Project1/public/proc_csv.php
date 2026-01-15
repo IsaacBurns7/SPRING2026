@@ -1,5 +1,15 @@
 <?php 
 
+
+/**
+ * Processes CSV file and displays selected columns as HTML table
+ * 
+ * @param string $filename - Path to CSV file to process
+ * @param string $delimiter - Field separator character (',' or '\t')
+ * @param string $quote - Quote character for enclosing fields ('"' or "'")
+ * @param string $columns_to_show - "ALL" or colon-separated indices ("1:3:5")
+ * @return void - Outputs HTML table directly to page
+ */
 function proc_csv($filename, $delimiter, $quote, $columns_to_show){
     $mode = "r";
     $handle = fopen($filename, $mode) or die ("Cannot open $filename");
@@ -46,30 +56,24 @@ function proc_csv($filename, $delimiter, $quote, $columns_to_show){
     }
 }
 
-function my_fgetcsv($line, $delimiter = ",", $enclosure = '"'){
-    $fields = [];
-    $field = '';
-    $in_quotes = false;
-    $len = strlen($line);
-
-    for ($i = 0; $i < $len; $i++) {
-        $char = $line[$i];
-        if ($char === $enclosure) {
-            $in_quotes = !$in_quotes; // Toggle in_quotes if regular quote
-        } elseif ($char === $delimiter && !$in_quotes) {
-            $fields[] = $field;
-            $field = '';
-        } else {
-            $field .= $char;
-        }
-    }
-
-    //add in the last field 
-    $fields[] = $field;
-
-    return $fields;
-}
-
+/**
+ * Custom CSV parser using regex-based quoted string detection
+ * 
+ * Parses a single line of CSV data into an array of fields.  Uses regex pattern 
+ * matching to detect quoted strings at the start of each remaining segment,
+ * allowing delimiters to be safely ignored when inside quoted fields.
+ * This is the primary implementation used by proc_csv().
+ * 
+ * @param string $line - Single line of CSV data to parse
+ * @param string $delimiter - Field separator character (default: ",")
+ * @param string $enclosure - Quote character for enclosing fields (default: '"')
+ * 
+ * @return array - Array of field values extracted from the line, preserving
+ *                 quote characters around string fields
+ * 
+ * @example my_fgetcsv2('John,"Doe, Jr.",25', ',', '"') 
+ *          returns:  ['John', '"Doe, Jr."', '25']
+ */
 function my_fgetcsv2($line, $delimiter = ",", $enclosure = '"'){
     $pattern = '/^\"[^\"]+"/';
     /*  this pattern does the following: 
@@ -89,7 +93,7 @@ function my_fgetcsv2($line, $delimiter = ",", $enclosure = '"'){
             //NOT a string -> delimiter is safe 
             //look to delimiter or to newline
             $pos = strpos($line, $delimiter);
-            if(!$pos){
+            if($pos == false){ //note that if !$pos will fail is delimiter is at position 0 
                 $fields[] = $line; 
                 break; //end of line, can also do $line = '';  
             }else{
