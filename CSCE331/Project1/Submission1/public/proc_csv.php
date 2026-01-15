@@ -3,48 +3,39 @@
 function proc_csv($filename, $delimiter, $quote, $columns_to_show){
     $mode = "r";
     $handle = fopen($filename, $mode) or die ("Cannot open $filename");
-    $cols = [];
+    $cols = []; //denotes which columns are to be output
     $data = fgets($handle);
-    // echo "<br/>RAW DATA: "; 
-    // var_dump($data);
-    $data = trim($data);
-    // echo "<br/>non-raw data: "; 
-    // var_dump($data);
-
-    /*
-    3 cases: you're in quotes and you hit a delimiter, you're not in quotes and you hit a delimiter
-    you're 
-    */
-    $data = my_fgetcsv2("$data", $delimiter, $quote);
-    // echo "<br/>processed array: ";
-    // var_dump($data);
-
-    // $data = preg_split("/$delimiter/", $data);
-    // echo "<br/>DATA AFTER SPLIT BY DELIMITER: $delimiter ";
-    // var_dump($data);
-    //ignore delimiters in strings 
-
+    $data = trim($data); //remove whitespace
+    $data = my_fgetcsv2("$data", $delimiter, $quote); //custom implementation of fgetcsv
     $pattern = '/(\d+:)*\d/';
+    /*
+        The above regex does the following: 
+        denotes a group that is <number> followed by ':' character
+        allows that to happen 0 or more times
+        ends with a <number> character
+        effectively, this matches the '1:3:5:7'and similiar patterns 
+        please note that '1' is then an appropriate match
+    */
     if($columns_to_show == "ALL"){
+        //all columns are valid
         for($k = 0;$k < count($data); $k++){
             $cols[$k] = $k; 
         }
     }elseif(preg_match($pattern, $columns_to_show)) { 
-        $cols = preg_split("/:/", $columns_to_show);
-        // echo "<br/>COLUMNS RAW: $columns_to_show";    
-        // echo "<br/>COLUMNS: $cols";
+        //only some columns are valid
+        $cols = preg_split("/:/", $columns_to_show); //if no :, entire array is one element, the $columns_to_show string
     }else{
+        //confused as to what user did 
         die ("$columns_to_show did not match pattern \'ALL\' or $reg");
     }
-    // echo "<br/>";
-    // var_dump($cols);
-
+    //output first line
     echo "<table  border=\"1\">\n";
     echo "<tr>\n";
     foreach($cols as $index){
         echo "  <td> ".$data[$index]." </td>\n";
     }
     echo "</tr>\n";
+    //walk through and continue outputting
     while ($data = fgets($handle)) {
         echo "<tr>\n";
         $data_cols = my_fgetcsv2($data,$delimiter,$quote);
@@ -56,7 +47,6 @@ function proc_csv($filename, $delimiter, $quote, $columns_to_show){
 }
 
 function my_fgetcsv($line, $delimiter = ",", $enclosure = '"'){
-    // echo "<br/>";
     $fields = [];
     $field = '';
     $in_quotes = false;
@@ -64,12 +54,6 @@ function my_fgetcsv($line, $delimiter = ",", $enclosure = '"'){
 
     for ($i = 0; $i < $len; $i++) {
         $char = $line[$i];
-        // echo "inquotes at $i: ";
-        // var_dump($in_quotes);
-        // echo "given ";
-        // var_dump($char);
-        // echo "<br/>";
-
         if ($char === $enclosure) {
             $in_quotes = !$in_quotes; // Toggle in_quotes if regular quote
         } elseif ($char === $delimiter && !$in_quotes) {
@@ -88,6 +72,14 @@ function my_fgetcsv($line, $delimiter = ",", $enclosure = '"'){
 
 function my_fgetcsv2($line, $delimiter = ",", $enclosure = '"'){
     $pattern = '/^\"[^\"]+"/';
+    /*  this pattern does the following: 
+            - only look at the start of the string
+            - match "
+            - then match 1 or more characters that is NOT " 
+            - match "
+
+            effectively, the idea here is to check whether the next column of the line being processed is a string
+    */
     $fields = [];
     $matches = []; //should at most be 1 element given our specific regex
     echo "<br/>";
@@ -101,25 +93,17 @@ function my_fgetcsv2($line, $delimiter = ",", $enclosure = '"'){
                 $fields[] = $line; 
                 break; //end of line, can also do $line = '';  
             }else{
-                $fields[] = substr($line, 0, $pos);
-                $line = substr($line, $pos+1);
+                $fields[] = substr($line, 0, $pos); //includes until the comma
+                $line = substr($line, $pos+1); //skips until after comma 
             }
-            // echo "not string!<br/>";
         }else if(count($matches) == 1){
             //string!! 
             $len = strlen($matches[0]);
-            $fields[] = $matches[0];
-            $line = substr($line, $len+1); 
-            // echo "string!<br/>";
+            $fields[] = $matches[0]; //includes the entire string
+            $line = substr($line, $len+1); //skips the string and comma 
         }else{
-            //something hath gone astray
             die("Error: regex matched twice, not supposed to!");
         }
-        // echo "Line: $line<br/>";
-        // foreach($fields as $field){
-        //     echo "$field    ";
-        // }
-        // echo "<br/>";
     }
     return $fields; 
 }
