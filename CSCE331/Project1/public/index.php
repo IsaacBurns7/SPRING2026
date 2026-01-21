@@ -152,4 +152,6 @@ Lastname:
     proc_csv("../data/dat2-singlequote-tab.csv","\t","'", "ALL");
     proc_csv("../data/dat2-singlequote-tab.csv","\t","'", "1:3:5:7");
 
+    proc_csv("../data/dat-singlequote-comma.csv",",","'", "ALL");
+    proc_csv("../data/dat-singlequote-comma.csv",",","'", "1:3:5:7");
 ?>

@@ -16,7 +16,7 @@ function proc_csv($filename, $delimiter, $quote, $columns_to_show){
     $cols = []; //denotes which columns are to be output
     $data = fgets($handle);
     $data = trim($data); //remove whitespace
-    $data = my_fgetcsv2("$data", $delimiter, $quote); //custom implementation of fgetcsv
+    $data = my_fgetcsv($data, $delimiter, $quote); //custom implementation of fgetcsv
     $pattern = '/(\d+:)*\d/';
     /*
         The above regex does the following: 
@@ -46,23 +46,22 @@ function proc_csv($filename, $delimiter, $quote, $columns_to_show){
     }
     echo "</tr>\n";
     //walk through and continue outputting
-    while ($data = fgets($handle)) {
+   while ($data = fgets($handle)) {
         echo "<tr>\n";
-        $data_cols = my_fgetcsv2($data,$delimiter,$quote);
+        $data_cols = my_fgetcsv($data,$delimiter,$quote);
         foreach ($cols as $index) {
             echo "  <td> ".$data_cols[$index]." </td>\n";
         }
         echo "</tr>\n";
     }
+    echo "<br></br>";
 }
 
 /**
  * Custom CSV parser using regex-based quoted string detection
  * 
  * Parses a single line of CSV data into an array of fields.  Uses regex pattern 
- * matching to detect quoted strings at the start of each remaining segment,
- * allowing delimiters to be safely ignored when inside quoted fields.
- * This is the primary implementation used by proc_csv().
+ * matching to detect quoted strings allowing delimiters to be safely ignored when inside quoted fields.
  * 
  * @param string $line - Single line of CSV data to parse
  * @param string $delimiter - Field separator character (default: ",")
@@ -74,42 +73,27 @@ function proc_csv($filename, $delimiter, $quote, $columns_to_show){
  * @example my_fgetcsv2('John,"Doe, Jr.",25', ',', '"') 
  *          returns:  ['John', '"Doe, Jr."', '25']
  */
-function my_fgetcsv2($line, $delimiter = ",", $enclosure = '"'){
-    $pattern = '/^\"[^\"]+"/';
-    /*  this pattern does the following: 
-            - only look at the start of the string
-            - match "
-            - then match 1 or more characters that is NOT " 
-            - match "
 
-            effectively, the idea here is to check whether the next column of the line being processed is a string
+function my_fgetcsv($line, $delimiter = ",", $enclosure = '"'){
+    /*This is the pattern with 
+        hardcoded enclosure of double quotes and 
+        hardcoded delimiter of comma
+    $pattern = '/,(?=(?:[^"]*"[^"]*")*[^"]*$)/';
+    The pattern does the following: accept all commas that follow
+        - ?= -> lookahead
+        - (?:[^"]*"[^"]*")* -> pairs of quotes
+        - [^"]*$ -> match anything else, then end of line
+    effectively, this looks forward and finds if there's an even number of quotes ahead 
+        - if there isnt, it wont match b/c uneven quotes (implies ->) you're in a string, therefore do NOT act 
+        that , is a delimiter
+        - if there is, it knows its not a string.
     */
-    $fields = [];
-    $matches = []; //should at most be 1 element given our specific regex
-    echo "<br/>";
-    while(strlen($line) != 0){
-        preg_match($pattern, $line, $matches);
-        if(count($matches) == 0){
-            //NOT a string -> delimiter is safe 
-            //look to delimiter or to newline
-            $pos = strpos($line, $delimiter);
-            if($pos == false){ //note that if !$pos will fail is delimiter is at position 0 
-                $fields[] = $line; 
-                break; //end of line, can also do $line = '';  
-            }else{
-                $fields[] = substr($line, 0, $pos); //includes until the comma
-                $line = substr($line, $pos+1); //skips until after comma 
-            }
-        }else if(count($matches) == 1){
-            //string!! 
-            $len = strlen($matches[0]);
-            $fields[] = $matches[0]; //includes the entire string
-            $line = substr($line, $len+1); //skips the string and comma 
-        }else{
-            die("Error: regex matched twice, not supposed to!");
-        }
-    }
-    return $fields; 
+    $pattern = '/' . preg_quote($delimiter) . '(?=(?:[^' 
+        . preg_quote($enclosure, '/') . ']*'
+        . preg_quote($enclosure, '/') . '[^'
+        . preg_quote($enclosure, '/') . ']*'
+        . preg_quote($enclosure, '/') . ')*[^'
+        . preg_quote($enclosure, '/') . ']*$)/';
+    $ret = preg_split($pattern, $line, 0);
+    return $ret;
 }
-
-?>
