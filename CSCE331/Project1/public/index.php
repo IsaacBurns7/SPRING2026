@@ -135,23 +135,37 @@ Lastname:
 </html>
 
 <?php 
-    echo "<br/><br/><br/>TESTING PROC CSV"; 
-    require_once("proc_csv.php");
-    proc_csv("../data/dat-doublequote-comma.csv",",","\"", "ALL");
-    proc_csv("../data/dat-doublequote-comma.csv",",","\"", "1:3:5:7");
+    // echo "<br/><br/><br/>TESTING PROC CSV"; 
+    // require_once("proc_csv.php");
+    // proc_csv("../data/dat-doublequote-comma.csv",",","\"", "ALL");
+    // proc_csv("../data/dat-doublequote-comma.csv",",","\"", "1:3:5:7");
 
-    proc_csv("../data/dat-doublequote-tab.csv","\t","\"", "ALL");
-    proc_csv("../data/dat-doublequote-tab.csv","\t","\"", "1:3:5:7");
+    // proc_csv("../data/dat-doublequote-tab.csv","\t","\"", "ALL");
+    // proc_csv("../data/dat-doublequote-tab.csv","\t","\"", "1:3:5:7");
 
-    proc_csv("../data/dat2-doublequote-comma.csv",",","\"", "ALL");
-    proc_csv("../data/dat2-doublequote-comma.csv",",","\"", "1:3:5:7");
+    // proc_csv("../data/dat2-doublequote-comma.csv",",","\"", "ALL");
+    // proc_csv("../data/dat2-doublequote-comma.csv",",","\"", "1:3:5:7");
 
-    proc_csv("../data/dat2-doublequote-tab.csv","\t","\"", "ALL");
-    proc_csv("../data/dat2-doublequote-tab.csv","\t","\"", "1:3:5:7");
+    // proc_csv("../data/dat2-doublequote-tab.csv","\t","\"", "ALL");
+    // proc_csv("../data/dat2-doublequote-tab.csv","\t","\"", "1:3:5:7");
 
-    proc_csv("../data/dat2-singlequote-tab.csv","\t","'", "ALL");
-    proc_csv("../data/dat2-singlequote-tab.csv","\t","'", "1:3:5:7");
+    // proc_csv("../data/dat2-singlequote-tab.csv","\t","'", "ALL");
+    // proc_csv("../data/dat2-singlequote-tab.csv","\t","'", "1:3:5:7");
 
-    proc_csv("../data/dat-singlequote-comma.csv",",","'", "ALL");
-    proc_csv("../data/dat-singlequote-comma.csv",",","'", "1:3:5:7");
+    // proc_csv("../data/dat-singlequote-comma.csv",",","'", "ALL");
+    // proc_csv("../data/dat-singlequote-comma.csv",",","'", "1:3:5:7");
+    require_once("proc_markdown.php");
+    $test_files = [
+        'edge-case-headings.md',
+        'edge-case-lists.md',
+        'edge-case-paragraphs.md',
+        'edge-case-combined.md',
+        'edge-case-basic.md'
+    ];
+
+    foreach($test_files as $file) {
+        echo "<h2>Testing: $file</h2>";
+        proc_markdown("../data/markdown/$file");
+        echo "<hr>";
+    }
 ?>
