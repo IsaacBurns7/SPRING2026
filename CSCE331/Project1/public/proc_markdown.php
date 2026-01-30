@@ -27,61 +27,13 @@ split input into lines of $text
             $safeText = htmlspecialchars($userInput, ENT_QUOTES, 'UTF-8');
 */
 
-// Helper function: check if line is unordered list
-function is_unordered_list($line) {
-    return strpos($line, '*') === 0 || strpos($line, '-') === 0;
-}
-
-// Helper function: check if line is ordered list
-function is_ordered_list($line) {
-    return preg_match('/^\d+\./', $line) === 1;
-}
-
-// Helper function: check if line is heading, extract hash count
-function is_heading($line, &$hash_count) {
-    if(preg_match('/^#+/', $line, $matches)) {
-        $hash_count = strlen($matches[0]);
-        return true;
-    }
-    return false;
-}
-
-// Helper function: get indent depth from original line
-function get_indent_depth($original_line) {
+// Get indent depth from original (untrimmed) line
+function get_depth($original_line) {
     $indent = strlen($original_line) - strlen(ltrim($original_line, " \t"));
     return intval($indent / 2);
 }
 
-// Helper function: close lists down to a certain depth
-function close_lists_to_depth(&$list_stack, $depth) {
-    while(count($list_stack) > $depth) {
-        $type = array_pop($list_stack);
-        echo "</$type>";
-    }
-}
-
-// Helper function: open lists up to a certain depth
-function open_lists_to_depth(&$list_stack, $depth, $type) {
-    while(count($list_stack) < $depth) {
-        array_push($list_stack, $type);
-        echo "<$type>";
-    }
-}
-
-// Helper function: start or switch list type at current level
-function start_or_switch_list(&$list_stack, $type) {
-    if(count($list_stack) == 0) {
-        array_push($list_stack, $type);
-        echo "<$type>";
-    } elseif(end($list_stack) !== $type) {
-        $old_type = array_pop($list_stack);
-        echo "</$old_type>";
-        array_push($list_stack, $type);
-        echo "<$type>";
-    }
-}
-
-// Helper function: close all open lists
+// Close all open lists in stack
 function close_all_lists(&$list_stack) {
     while(count($list_stack) > 0) {
         $type = array_pop($list_stack);
@@ -89,33 +41,41 @@ function close_all_lists(&$list_stack) {
     }
 }
 
-// Process unordered list item
-function process_unordered_list($line, &$list_stack, $depth) {
-    close_lists_to_depth($list_stack, $depth);
-    open_lists_to_depth($list_stack, $depth, 'ul');
-    start_or_switch_list($list_stack, 'ul');
-    $content = trim(ltrim($line, '*-'));
+// Handle list item (both ordered and unordered)
+function handle_list(&$list_stack, $depth, $list_type, $content) {
+    // Close deeper lists if going up
+    while(count($list_stack) > $depth) {
+        $type = array_pop($list_stack);
+        echo "</$type>";
+    }
+    // Open new lists if going down
+    while(count($list_stack) < $depth) {
+        array_push($list_stack, $list_type);
+        echo "<$list_type>";
+    }
+    // Start or switch list at this level
+    if(count($list_stack) == 0) {
+        array_push($list_stack, $list_type);
+        echo "<$list_type>";
+    } elseif(end($list_stack) !== $list_type) {
+        $old = array_pop($list_stack);
+        echo "</$old>";
+        array_push($list_stack, $list_type);
+        echo "<$list_type>";
+    }
     echo "<li>" . htmlspecialchars($content, ENT_QUOTES, 'UTF-8') . "</li>";
 }
 
-// Process ordered list item
-function process_ordered_list($line, &$list_stack, $depth) {
-    close_lists_to_depth($list_stack, $depth);
-    open_lists_to_depth($list_stack, $depth, 'ol');
-    start_or_switch_list($list_stack, 'ol');
-    $content = trim(preg_replace('/^\d+\./', '', $line));
-    echo "<li>" . htmlspecialchars($content, ENT_QUOTES, 'UTF-8') . "</li>";
-}
-
-// Process heading
-function process_heading($line, &$list_stack, $hash_count) {
+// Handle heading
+function handle_heading(&$list_stack, $line, $matches) {
     close_all_lists($list_stack);
+    $hash_count = strlen($matches[0]);
     $content = trim(ltrim($line, '#'));
     echo "<h$hash_count>" . htmlspecialchars($content, ENT_QUOTES, 'UTF-8') . "</h$hash_count>";
 }
 
-// Process paragraph
-function process_paragraph($line, &$list_stack) {
+// Handle paragraph
+function handle_paragraph(&$list_stack, $line) {
     close_all_lists($list_stack);
     echo "<p>" . htmlspecialchars($line, ENT_QUOTES, 'UTF-8') . "</p>";
 }
@@ -128,26 +88,31 @@ function proc_markdown($filename) {
     foreach($lines as $line) {
         $original_line = $line;
         $line = trim($line);
-        $depth = get_indent_depth($original_line);
+        $depth = get_depth($original_line);
         
-        if(is_unordered_list($line)) {
-            process_unordered_list($line, $list_stack, $depth);
-        } 
-        elseif(is_ordered_list($line)) {
-            process_ordered_list($line, $list_stack, $depth);
+        // Unordered list
+        if(strpos($line, '*') === 0 || strpos($line, '-') === 0) {
+            $content = trim(ltrim($line, '*- '));
+            handle_list($list_stack, $depth, 'ul', $content);
         }
-        elseif(is_heading($line, $hash_count)) {
-            process_heading($line, $list_stack, $hash_count);
+        // Ordered list
+        elseif(preg_match('/^\d+\./', $line)) {
+            $content = trim(preg_replace('/^\d+\./', '', $line));
+            handle_list($list_stack, $depth, 'ol', $content);
         }
+        // Heading
+        elseif(preg_match('/^#+/', $line, $matches)) {
+            handle_heading($list_stack, $line, $matches);
+        }
+        // Blank line
         elseif(empty($line)) {
             close_all_lists($list_stack);
         }
+        // Paragraph
         else {
-            process_paragraph($line, $list_stack);
+            handle_paragraph($list_stack, $line);
         }
     }
-    
-    // Close any remaining open lists
     close_all_lists($list_stack);
 }
 ?>
