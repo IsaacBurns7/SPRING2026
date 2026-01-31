@@ -19,7 +19,7 @@
 
 # Heading in the middle
 
-  * This should be nested but there's a heading above
+    * This should be nested but there's a heading above
   * Still nested
 
 ## Multiple heading levels rapidly

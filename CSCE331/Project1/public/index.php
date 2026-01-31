@@ -156,6 +156,7 @@ Lastname:
     // proc_csv("../data/dat-singlequote-comma.csv",",","'", "1:3:5:7");
     require_once("proc_markdown.php");
     $test_files = [
+        'edge-case-inline.md',
         'edge-case-headings.md',
         'edge-case-lists.md',
         'edge-case-paragraphs.md',

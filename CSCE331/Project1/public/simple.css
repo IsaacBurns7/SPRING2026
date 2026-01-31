@@ -2,7 +2,7 @@
 <!--
  	BODY  { background: white; color: black ; font-family: sans-serif}
         P EM  { background: yellow; color: black; font-family: sans-serif }
-        P { background: white; color: black; font-family: sans-serif }
+        P { background: white; color: black; font-family: sans-serif; margin-left: 2em; }
 	DIV { font-family: sans-serif }
 	H1    { font-family: sans-serif }
 	H2    { font-family: sans-serif }
