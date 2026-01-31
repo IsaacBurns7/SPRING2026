@@ -1,31 +1,4 @@
 <?php
-/*
-stages
-1. normalize input (trimming, line endings)
-2. block-level elements like headings, list, paragraphs
-3. inline elements like bold, italic, underline, links, images
-
-split input into lines of $text
-    for each line, 
-        trim
-        check block-level first (at the front)
-            first check lists 
-            then check # 
-                - note: if # then list, no work, but if list then #, then it works
-        handle lists with state
-            start a list when u see * or 1. and close it when u hit a blank line or a non-list line
-            # this avoids unclosed <ul> or <ol> tags
-        now handle inline formatting
-            just replace underline, bold, italics with regex
-        FINALLY,
-            "escape" user input by replacing dangerous chars 
-                < -> &lt; 
-                > -> &gt; 
-                " -> &quot;
-                ' -> &#039;
-                & -> &amp;
-            $safeText = htmlspecialchars($userInput, ENT_QUOTES, 'UTF-8');
-*/
 
 // Get indent depth from original (untrimmed) line
 function get_depth($original_line) {

@@ -154,19 +154,68 @@ Lastname:
 
     // proc_csv("../data/dat-singlequote-comma.csv",",","'", "ALL");
     // proc_csv("../data/dat-singlequote-comma.csv",",","'", "1:3:5:7");
-    require_once("proc_markdown.php");
-    $test_files = [
-        'edge-case-inline.md',
-        'edge-case-headings.md',
-        'edge-case-lists.md',
-        'edge-case-paragraphs.md',
-        'edge-case-combined.md',
-        'edge-case-basic.md'
-    ];
 
-    foreach($test_files as $file) {
-        echo "<h2>Testing: $file</h2>";
-        proc_markdown("../data/markdown/$file");
-        echo "<hr>";
-    }
+    // require_once("proc_markdown.php");
+    // $test_files = [
+    //     'edge-case-inline.md',
+    //     'edge-case-headings.md',
+    //     'edge-case-lists.md',
+    //     'edge-case-paragraphs.md',
+    //     'edge-case-combined.md',
+    //     'edge-case-basic.md'
+    // ];
+
+    // foreach($test_files as $file) {
+    //     echo "<h2>Testing: $file</h2>";
+    //     proc_markdown("../data/markdown/$file");
+    //     echo "<hr>";
+    // }
+
+    require_once("proc_gallery.php");
+
+    // 18 calls: sortmode (outer) x displaymode (inner)
+    // sortmode: orig, date_newest, date_oldest, size_largest, size_smallest, rand
+    // displaymode: list, matrix, details
+
+    // orig
+    echo "<h2>Testing: orig</h2>";
+    proc_gallery("../data/my_favorites.csv", "list", "orig");
+    proc_gallery("../data/my_favorites.csv", "matrix", "orig");
+    proc_gallery("../data/my_favorites.csv", "details", "orig");
+    echo "<hr>";
+
+    // date_newest
+    echo "<h2>Testing: date_newest</h2>";
+    proc_gallery("../data/my_favorites.csv", "list", "date_newest");
+    proc_gallery("../data/my_favorites.csv", "matrix", "date_newest");
+    proc_gallery("../data/my_favorites.csv", "details", "date_newest");
+    echo "<hr>";
+
+    // date_oldest
+    echo "<h2>Testing: date_oldest</h2>";
+    proc_gallery("../data/my_favorites.csv", "list", "date_oldest");
+    proc_gallery("../data/my_favorites.csv", "matrix", "date_oldest");
+    proc_gallery("../data/my_favorites.csv", "details", "date_oldest");
+    echo "<hr>";
+
+    // size_largest
+    echo "<h2>Testing: size_largest</h2>";
+    proc_gallery("../data/my_favorites.csv", "list", "size_largest");
+    proc_gallery("../data/my_favorites.csv", "matrix", "size_largest");
+    proc_gallery("../data/my_favorites.csv", "details", "size_largest");
+    echo "<hr>";
+
+    // size_smallest
+    echo "<h2>Testing: size_smallest</h2>";
+    proc_gallery("../data/my_favorites.csv", "list", "size_smallest");
+    proc_gallery("../data/my_favorites.csv", "matrix", "size_smallest");
+    proc_gallery("../data/my_favorites.csv", "details", "size_smallest");
+    echo "<hr>";
+
+    // rand
+    echo "<h2>Testing: rand</h2>";
+    proc_gallery("../data/my_favorites.csv", "list", "rand");
+    proc_gallery("../data/my_favorites.csv", "matrix", "rand");
+    proc_gallery("../data/my_favorites.csv", "details", "rand");
+
 ?>
