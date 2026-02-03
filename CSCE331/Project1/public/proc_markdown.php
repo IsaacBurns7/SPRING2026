@@ -22,12 +22,13 @@ function format_inline($text) {
     // Underline: <ins>text</ins> (already escaped, so match &lt;ins&gt;)
     $text = preg_replace('/&lt;ins&gt;(.+?)&lt;\/ins&gt;/', '<ins>$1</ins>', $text);
     
-    // Links: [text](url)
-    $text = preg_replace('/\[(.+?)\]\((.+?)\)/', '<a href="$2">$1</a>', $text);
-    
     // Images: ![alt](url)
     $text = preg_replace('/!\[(.+?)\]\((.+?)\)/', '<img src="$2" alt="$1">', $text);
     
+    // Links: [text](url)
+    $text = preg_replace('/\[(.+?)\]\((.+?)\)/', '<a href="$2">$1</a>', $text);
+    
+   
     return $text;
 }
 
@@ -133,9 +134,7 @@ function print_debug_table($filename) {
 
 // Main markdown processor
 function proc_markdown($filename, $debug = true) {
-    if($debug) {
-        print_debug_table($filename);
-    }
+    // if($debug) {
     
     $lines = file($filename);
     $list_stack = [];

@@ -148,3 +148,4 @@ function proc_gallery($image_list_filename, $mode, $sort_mode) {
 
 }
 
+?>

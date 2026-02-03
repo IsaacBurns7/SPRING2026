@@ -39,8 +39,8 @@ if (filter_var($url,FILTER_VALIDATE_URL)) {
   echo "<pre class=\"code\">\n";
 
   # PHP system call to get html from URL
-#  $html = file_get_contents(getcwd().$url);  
-   $html = file_get_contents($url); 
+   $html = file_get_contents(getcwd().$url);  
+   #$html = file_get_contents($url); 
 
   # print out raw html, formatted with a php function
   echo "** Printing RAW HTML **";

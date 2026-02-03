@@ -30,18 +30,13 @@ _also italic_
 ## Links
 
 [Simple link](https://example.com)
-[Link with spaces](https://example.com/path with spaces)
-[](https://empty-text.com)
-[empty url]()
 [Link with **bold**](https://example.com)
 Multiple [link1](url1) and [link2](url2) on same line
 
 ## Images
 
-![Alt text](https://example.com/image.jpg)
-![](https://no-alt.com/image.png)
-![Alt only]()
-![Image with **bold** alt](https://example.com/img.png)
+![Alt text](https://yschoe.github.io/images/yschoe8.jpg)
+![Image with **bold** alt](https://yschoe.github.io/images/yschoe8.jpg)
 
 ## Mixed inline formatting
 

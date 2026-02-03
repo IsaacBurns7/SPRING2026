@@ -106,6 +106,10 @@
 <a href="fetch.php">fetch.php</a>
 </div>
 
+
+</div>
+<p/>
+
 <!-- HTML form input handling .......................... -->
 
 <h3>HTML Form input test</h3>
@@ -134,28 +138,54 @@ Lastname:
 
 </html>
 
+<!-- Site Search .......................... -->
+<h3>Site Search</h3>
+<form method="GET" action="index.php">
+    <label for="q">Search:</label>
+    <input type="text" id="q" name="q" placeholder="Enter search keyword..." 
+           value="<?php echo isset($_GET['q']) ? htmlspecialchars($_GET['q']) : ''; ?>">
+    <button type="submit">Search</button>
+</form>
+
+<div class="results">
+<?php
+    //no need to protect against infinite recursion here b/c search php already does that :) 
+    require_once("search.php");
+    $searchQuery = $_GET['q'];
+    $sanitizedQuery = sanitize($searchQuery);
+    
+    if ($sanitizedQuery === '') {
+        echo "<p>Please enter a valid search term (alphanumeric characters and spaces only).</p>";
+    } else {
+        $results = search($searchQuery);
+        display_results($results, $sanitizedQuery);
+    }
+?>
+
 <?php 
-    // echo "<br/><br/><br/>TESTING PROC CSV"; 
-    // require_once("proc_csv.php");
-    // proc_csv("../data/dat-doublequote-comma.csv",",","\"", "ALL");
-    // proc_csv("../data/dat-doublequote-comma.csv",",","\"", "1:3:5:7");
-
-    // proc_csv("../data/dat-doublequote-tab.csv","\t","\"", "ALL");
-    // proc_csv("../data/dat-doublequote-tab.csv","\t","\"", "1:3:5:7");
-
-    // proc_csv("../data/dat2-doublequote-comma.csv",",","\"", "ALL");
-    // proc_csv("../data/dat2-doublequote-comma.csv",",","\"", "1:3:5:7");
-
-    // proc_csv("../data/dat2-doublequote-tab.csv","\t","\"", "ALL");
-    // proc_csv("../data/dat2-doublequote-tab.csv","\t","\"", "1:3:5:7");
-
-    // proc_csv("../data/dat2-singlequote-tab.csv","\t","'", "ALL");
-    // proc_csv("../data/dat2-singlequote-tab.csv","\t","'", "1:3:5:7");
-
-    // proc_csv("../data/dat-singlequote-comma.csv",",","'", "ALL");
-    // proc_csv("../data/dat-singlequote-comma.csv",",","'", "1:3:5:7");
-
+    require_once("proc_csv.php");
     // require_once("proc_markdown.php");
+    // var_dump(file_get_contents('http://webserver/jstest.php'));
+
+    echo "<br/><br/><br/>TESTING PROC CSV"; 
+    proc_csv("../data/dat-doublequote-comma.csv",",","\"", "ALL");
+    proc_csv("../data/dat-doublequote-comma.csv",",","\"", "1:3");
+
+    proc_csv("../data/dat-doublequote-tab.csv","\t","\"", "ALL");
+    proc_csv("../data/dat-doublequote-tab.csv","\t","\"", "1:3");
+
+    proc_csv("../data/dat2-doublequote-comma.csv",",","\"", "ALL");
+    proc_csv("../data/dat2-doublequote-comma.csv",",","\"", "1:3");
+
+    proc_csv("../data/dat2-doublequote-tab.csv","\t","\"", "ALL");
+    proc_csv("../data/dat2-doublequote-tab.csv","\t","\"", "1:3");
+
+    proc_csv("../data/dat2-singlequote-tab.csv","\t","'", "ALL");
+    proc_csv("../data/dat2-singlequote-tab.csv","\t","'", "1:3");
+
+    proc_csv("../data/dat-singlequote-comma.csv",",","'", "ALL");
+    proc_csv("../data/dat-singlequote-comma.csv",",","'", "2");
+
     // $test_files = [
     //     'edge-case-inline.md',
     //     'edge-case-headings.md',
@@ -165,57 +195,56 @@ Lastname:
     //     'edge-case-basic.md'
     // ];
 
+    // echo "<h2>Markdown Tests</h2>";
+    // proc_markdown("../data/markdown.md");
+    // echo "<hr>";
     // foreach($test_files as $file) {
-    //     echo "<h2>Testing: $file</h2>";
+    //     echo "<h3>Testing: $file</h3>";
     //     proc_markdown("../data/markdown/$file");
     //     echo "<hr>";
     // }
 
-    require_once("proc_gallery.php");
 
-    // 18 calls: sortmode (outer) x displaymode (inner)
-    // sortmode: orig, date_newest, date_oldest, size_largest, size_smallest, rand
-    // displaymode: list, matrix, details
+    
 
-    // orig
-    echo "<h2>Testing: orig</h2>";
-    proc_gallery("../data/my_favorites.csv", "list", "orig");
-    proc_gallery("../data/my_favorites.csv", "matrix", "orig");
-    proc_gallery("../data/my_favorites.csv", "details", "orig");
-    echo "<hr>";
+    // echo "<h2>Gallery Viewer</h2>";
+    // require_once("proc_gallery.php");
 
-    // date_newest
-    echo "<h2>Testing: date_newest</h2>";
-    proc_gallery("../data/my_favorites.csv", "list", "date_newest");
-    proc_gallery("../data/my_favorites.csv", "matrix", "date_newest");
-    proc_gallery("../data/my_favorites.csv", "details", "date_newest");
-    echo "<hr>";
+    // // Get default values from URL parameters or use defaults
+    // $displayMode = isset($_POST['displayMode']) ? $_POST['displayMode'] : 'list';
+    // $sortMode = isset($_POST['sortMode']) ? $_POST['sortMode'] : 'orig';
 
-    // date_oldest
-    echo "<h2>Testing: date_oldest</h2>";
-    proc_gallery("../data/my_favorites.csv", "list", "date_oldest");
-    proc_gallery("../data/my_favorites.csv", "matrix", "date_oldest");
-    proc_gallery("../data/my_favorites.csv", "details", "date_oldest");
-    echo "<hr>";
+    // // Validate inputs to prevent misuse
+    // $validDisplayModes = ['list', 'matrix', 'details'];
+    // $validSortModes = ['orig', 'date_newest', 'date_oldest', 'size_largest', 'size_smallest', 'rand'];
+    
+    // if (!in_array($displayMode, $validDisplayModes)) $displayMode = 'list';
+    // if (!in_array($sortMode, $validSortModes)) $sortMode = 'orig';
 
-    // size_largest
-    echo "<h2>Testing: size_largest</h2>";
-    proc_gallery("../data/my_favorites.csv", "list", "size_largest");
-    proc_gallery("../data/my_favorites.csv", "matrix", "size_largest");
-    proc_gallery("../data/my_favorites.csv", "details", "size_largest");
-    echo "<hr>";
+    // echo "<form id='galleryForm' method='POST' style='margin-bottom: 20px;'>";
+    // echo "  <label for='sortMode'>Sort by:</label>";
+    // echo "  <select id='sortMode' name='sortMode' onchange='updateGallery();'>";
+    // echo "    <option value='orig' " . ($sortMode == 'orig' ? 'selected' : '') . ">Original</option>";
+    // echo "    <option value='date_newest' " . ($sortMode == 'date_newest' ? 'selected' : '') . ">Newest First</option>";
+    // echo "    <option value='date_oldest' " . ($sortMode == 'date_oldest' ? 'selected' : '') . ">Oldest First</option>";
+    // echo "    <option value='size_largest' " . ($sortMode == 'size_largest' ? 'selected' : '') . ">Largest First</option>";
+    // echo "    <option value='size_smallest' " . ($sortMode == 'size_smallest' ? 'selected' : '') . ">Smallest First</option>";
+    // echo "    <option value='rand' " . ($sortMode == 'rand' ? 'selected' : '') . ">Random</option>";
+    // echo "  </select>";
+    
+    // echo "  &nbsp;&nbsp;&nbsp;";
+    
+    // echo "  <label for='displayMode'>Display as:</label>";
+    // echo "  <select id='displayMode' name='displayMode' onchange='updateGallery();'>";
+    // echo "    <option value='list' " . ($displayMode == 'list' ? 'selected' : '') . ">List</option>";
+    // echo "    <option value='matrix' " . ($displayMode == 'matrix' ? 'selected' : '') . ">Matrix</option>";
+    // echo "    <option value='details' " . ($displayMode == 'details' ? 'selected' : '') . ">Details</option>";
+    // echo "  </select>";
+    // echo "  <input type='hidden' name='displayMode' value='" . htmlspecialchars($displayMode) . "'>";
+    // echo "  <input type='hidden' name='sortMode' value='" . htmlspecialchars($sortMode) . "'>";
+    // echo "</form>";
 
-    // size_smallest
-    echo "<h2>Testing: size_smallest</h2>";
-    proc_gallery("../data/my_favorites.csv", "list", "size_smallest");
-    proc_gallery("../data/my_favorites.csv", "matrix", "size_smallest");
-    proc_gallery("../data/my_favorites.csv", "details", "size_smallest");
-    echo "<hr>";
-
-    // rand
-    echo "<h2>Testing: rand</h2>";
-    proc_gallery("../data/my_favorites.csv", "list", "rand");
-    proc_gallery("../data/my_favorites.csv", "matrix", "rand");
-    proc_gallery("../data/my_favorites.csv", "details", "rand");
+    // // Display the gallery with selected options
+    // proc_gallery("../data/my_favorites.csv", $displayMode, $sortMode);
 
 ?>

@@ -13,11 +13,11 @@
   <ins>UNDERLINED</ins> : underlined 
 
 # 3. Links  
-  [ Home ](https://yschoe.github.io)
+[ Home ](https://yschoe.github.io)
 
 # 4. Images 
 
-  ![Yoonsuck](https://yschoe.github.io/images/yschoe8.jpg)
+![Yoonsuck](https://yschoe.github.io/images/yschoe8.jpg)
 
 # 5. Unordered lists  
   * first item  
