@@ -6,6 +6,23 @@ Created on Fri Sep  6 12:00:48 2019
 @author: 
 """
 
+"""
+Assume:
+
+W.shape == (K, d)
+
+_x.shape == (d,)
+
+_y.shape == (K,)
+
+p.shape == (K,)
+
+Then:
+Expression	            Shape
+p - _y	                (K,)
+_x	                    (d,)
+np.outer(p - _y, _x)	(K, d)
+"""
 import numpy as np
 import sys
 
@@ -34,10 +51,22 @@ class logistic_regression_multiclass(object):
         """
 
 		### YOUR CODE HERE
-
+        n_samples, n_features = X.shape
+        self.W = np.zeros(n_features)
+        for _ in range(self.max_iter):
+            indicies = np.random.permutation(n_samples)
+            X_shuffled = X[indicies]
+            labels_shuffled = labels[indicies]
+            # iterate from i to i + batch_size
+            for i in range(0, n_samples, batch_size):
+                gradient = np.zeros(n_features)
+                end = min(i + batch_size, n_samples)  # non-inclusive
+                for j in range(i, end):
+                    gradient += self._gradient(X_shuffled[j], labels_shuffled[j])
+                gradient /= (end - i)  # average over actual batch size
+                self.W -= self.learning_rate * gradient
 		### END YOUR CODE
-    
-
+        return self 
     def _gradient(self, _x, _y):
         """Compute the gradient of cross-entropy with respect to self.W
         for one training sample (_x, _y). This function is used in fit_*.
@@ -51,6 +80,17 @@ class logistic_regression_multiclass(object):
                 cross-entropy with respect to self.W.
         """
 		### YOUR CODE HERE
+        #for class K, the gradient is (p_k-y_n_k)x_n, or for all classes
+            #p in R^K, y_n in R^K, nabla_wE_n = (p-y_n)x^T_n
+        
+        if self.W is None:
+            raise ValueError("Weights must be initialized to calculate gradient")
+        p = self.softmax(_x) #vector of probabilities across all classes
+        print("Gradient: ")
+        print(p)
+        gradient = np.outer(p - _y, _x) 
+        print(gradient)
+        return gradient 
 
 		### END YOUR CODE
     
@@ -59,7 +99,12 @@ class logistic_regression_multiclass(object):
         ### You must implement softmax by youself, otherwise you will not get credits for this part.
 
 		### YOUR CODE HERE
-
+        # z = x - np.max(x) #stability trick?
+        # exp_z = np.exp(x)
+        exp = np.exp(x)
+        sum = np.sum(np.exp(x))
+       
+        return exp/sum 
 		### END YOUR CODE
     
     def get_params(self):
@@ -101,4 +146,3 @@ class logistic_regression_multiclass(object):
 		### YOUR CODE HERE
 
 		### END YOUR CODE
-

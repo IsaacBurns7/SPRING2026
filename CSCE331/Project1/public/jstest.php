@@ -110,6 +110,8 @@
 
    echo '<blockquote> DEBUG Canvas : <p id="debug_canvas"> Hello world! hello world! </p> </blockquote>';
 
+   require_once("proc_csv.php");
+    proc_csv("../data/dat-doublequote-comma.csv",",","\"", "ALL");
 ?>
 
 <!-- Java script testing area ............................... -->
