@@ -61,6 +61,7 @@ class logistic_regression(object):
     def __init__(self, learning_rate, max_iter):
         self.learning_rate = learning_rate
         self.max_iter = max_iter
+        self.W = None
 
     def fit_BGD(self, X, y):
         """Train perceptron model on data (X,y) with Batch Gradient Descent.
@@ -99,8 +100,9 @@ class logistic_regression(object):
             self: Returns an instance of self.
         """
 		### YOUR CODE HERE
+        if self.W is None:
+            self.W = np.zeros(n_features)
         n_samples, n_features = X.shape
-        self.W = np.zeros(n_features)
         for _ in range(self.max_iter):
             indicies = np.random.permutation(n_samples)
             X_shuffled = X[indicies]

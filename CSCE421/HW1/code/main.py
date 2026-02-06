@@ -84,7 +84,61 @@ def visualize_result_multi(X, y, W):
 		in submission.
 	'''
 	### YOUR CODE HERE
+	# Separate data points by class (0, 1, 2)
+	X_class0 = X[y == 0]
+	X_class1 = X[y == 1]
+	X_class2 = X[y == 2]
 
+	plt.figure(figsize=(8, 6))
+	plt.scatter(X_class0[:, 0], X_class0[:, 1], color='blue', marker='o', label='y=0', alpha=0.7)
+	plt.scatter(X_class1[:, 0], X_class1[:, 1], color='red', marker='o', label='y=1', alpha=0.7)
+	plt.scatter(X_class2[:, 0], X_class2[:, 1], color='green', marker='o', label='y=2', alpha=0.7)
+
+	# Decision boundaries between classes
+	# 
+	# SHAPES:
+	#   W: (K, n_features) = (3, 3)  -- K=3 classes, n_features=3 (1 bias + 2 features)
+	#   W[i] or W_i: (n_features,) = (3,)  -- weights for class i: [bias_i, w_i1, w_i2]
+	#   X: (n_samples, 2)  -- only the 2 features (bias column excluded for plotting)
+	#   x1_range: (100,)  -- linspace of feature 1 values for plotting the line
+	#   W_diff_ij: (3,)  -- difference of weight vectors between class i and j
+	#
+	# MATH:
+	# For softmax, boundary between class i and j is where W_i @ x = W_j @ x
+	# i.e., (W_i - W_j) @ x = 0
+	# Expanding with x = [1, x1, x2] (including bias term):
+	#   (W_i[0] - W_j[0])*1 + (W_i[1] - W_j[1])*x1 + (W_i[2] - W_j[2])*x2 = 0
+	# Solving for x2:
+	#   x2 = -((W_i[0] - W_j[0]) + (W_i[1] - W_j[1])*x1) / (W_i[2] - W_j[2])
+	
+	x1_min, x1_max = X[:, 0].min() - 0.5, X[:, 0].max() + 0.5
+	x1_range = np.linspace(x1_min, x1_max, 100)  # shape: (100,)
+	
+	# Boundary between class 0 and class 1
+	W_diff_01 = W[0] - W[1]  # shape: (3,) = W_0 - W_1
+	if W_diff_01[2] != 0:
+		x2_boundary_01 = -(W_diff_01[0] + W_diff_01[1] * x1_range) / W_diff_01[2]
+		plt.plot(x1_range, x2_boundary_01, 'purple', linewidth=2, linestyle='--', label='Boundary 0-1')
+	
+	# Boundary between class 1 and class 2
+	W_diff_12 = W[1] - W[2]
+	if W_diff_12[2] != 0:
+		x2_boundary_12 = -(W_diff_12[0] + W_diff_12[1] * x1_range) / W_diff_12[2]
+		plt.plot(x1_range, x2_boundary_12, 'orange', linewidth=2, linestyle='--', label='Boundary 1-2')
+	
+	# Boundary between class 0 and class 2
+	W_diff_02 = W[0] - W[2]
+	if W_diff_02[2] != 0:
+		x2_boundary_02 = -(W_diff_02[0] + W_diff_02[1] * x1_range) / W_diff_02[2]
+		plt.plot(x1_range, x2_boundary_02, 'cyan', linewidth=2, linestyle='--', label='Boundary 0-2')
+
+	plt.xlabel('Feature 1')
+	plt.ylabel('Feature 2')
+	plt.title('Multiclass Logistic Regression - Softmax Decision Boundaries')
+	plt.legend()
+	plt.grid(True, alpha=0.3)
+	plt.savefig('train_result_softmax.png', dpi=100, bbox_inches='tight')
+	plt.close()
 	### END YOUR CODE
 
 def test_gradient():
@@ -336,22 +390,45 @@ def main():
     valid_y = valid_y_all
 
     #########  miniBGD for multiclass Logistic Regression
-    logisticR_classifier_multiclass = logistic_regression_multiclass(learning_rate=0.5, max_iter=100,  k= 3)
+    logisticR_classifier_multiclass = logistic_regression_multiclass(learning_rate=0.5, max_iter=100,  k = 3)
     logisticR_classifier_multiclass.fit_miniBGD(train_X, train_y, 10)
     print("Logistic multiclass classifier weights: ", logisticR_classifier_multiclass.get_params())
     print("Logistic multiclass classifier score: ", logisticR_classifier_multiclass.score(train_X, train_y))
 
+    #[:, 1:3] excludes feature 2 which is the bias 
+    # visualize_result_multi(train_X[:, 1:3], train_y, logisticR_classifier_multiclass.get_params())
+
     # Explore different hyper-parameters.
     ### YOUR CODE HERE
+    learning_rates = [x for x in np.arange(0.01, 0.22, 0.02)]
+    max_iters = [x for x in range(50, 151, 100)]
+    best_logistic_multi_R = logistic_regression_multiclass(learning_rate=0, max_iter=0, k=3)
+    best_score = 0
+    for rate in learning_rates:
+        for iters in max_iters:
+            classifier = logistic_regression_multiclass(learning_rate=rate, max_iter=iters, k=3)
+            classifier.fit_miniBGD(train_X, train_y, 10)
+            # print("\n" + "=" * 50)
+            score = classifier.score(valid_X, valid_y)
+            # print(f"Accuracy for learning rate: {rate} and max_iters: {iters} is {score}")
+            # print("=" * 50)
+            if(score > best_score):
+                best_logistic_multi_R = classifier
+                best_score = score
 
     ### END YOUR CODE
 
 	# Visualize the your 'best' model after training.
-	# visualize_result_multi(train_X[:, 1:3], train_y, best_logistic_multi_R.get_params())
+    visualize_result_multi(train_X[:, 1:3], train_y, best_logistic_multi_R.get_params())
 
 
     # Use the 'best' model above to do testing.
     ### YOUR CODE HERE
+    print("\n" + "-" * 50)
+    print(f"BEST LEARNING MODEL WEIGHTS: ", best_logistic_multi_R.get_params())
+    print(f"BEST LEARNING MODEL SCORE ON TRAINING: ", best_logistic_multi_R.score(train_X, train_y))
+    print(f"BEST LEARNING MODEL SCORE ON VALIDATION: ", best_logistic_multi_R.score(valid_X, valid_y))
+    print("-" * 50)
 
     ### END YOUR CODE
 
@@ -372,14 +449,33 @@ def main():
     ###### First, fit softmax classifer until convergence, and evaluate 
     ##### Hint: we suggest to set the convergence condition as "np.linalg.norm(gradients*1./batch_size) < 0.0005" or max_iter=10000:
     ### YOUR CODE HERE
+    softmax_classifier = logistic_regression_multiclass(learning_rate=0.1, max_iter=100, k=2)
+    batch_size = 10
+    for i in range(0, 10001, 100):
+        softmax_classifier.fit_miniBGD(train_X, train_y, batch_size=batch_size)
+        
+        # Compute gradient norm to check convergence
+        gradient = np.zeros((2, train_X.shape[1]))
+        for j in range(batch_size):
+            one_hot = np.zeros(2)
+            one_hot[int(train_y[j])] = 1
+            gradient += softmax_classifier._gradient(train_X[j], one_hot)
+        grad_norm = np.linalg.norm(gradient / batch_size)
+        
+        print("\n" + "=" * 50)
+        print(f"Reporting on iteration [{i}, {i+100}]")
+        print("Softmax Classifier (k=2, labels 0/1)")
+        print("=" * 50)
+        print(f"Weights: {softmax_classifier.get_params()}")
+        print(f"Training Accuracy: {softmax_classifier.score(train_X, train_y):.4f}")
+        print(f"Validation Accuracy: {softmax_classifier.score(valid_X, valid_y):.4f}")
+        print(f"Gradient Norm: {grad_norm:.6f}")
+        
+        if grad_norm < 0.0005:
+            print("Converged!")
+            break
 
     ### END YOUR CODE
-
-
-
-
-
-
     train_X = train_X_all[train_idx]
     train_y = train_y_all[train_idx]
     train_X = train_X[0:1350]
@@ -388,12 +484,36 @@ def main():
     valid_y = valid_y_all[val_idx] 
     #####       set lables to -1 and 1 for sigmoid classifer
 	### YOUR CODE HERE
-
+    train_y[train_y == 2] = -1
+    valid_y[valid_y == 2] = -1
 	### END YOUR CODE 
 
     ###### Next, fit sigmoid classifer until convergence, and evaluate
     ##### Hint: we suggest to set the convergence condition as "np.linalg.norm(gradients*1./batch_size) < 0.0005" or max_iter=10000:
     ### YOUR CODE HERE
+    sigmoid_classifier = logistic_regression(learning_rate=0.01, max_iter=100)
+    batch_size = 10
+    for i in range(0, 10001, 100):
+        sigmoid_classifier.fit_miniBGD(train_X, train_y, batch_size=batch_size)
+        
+        # Compute gradient norm to check convergence
+        gradient = np.zeros(train_X.shape[1])
+        for j in range(batch_size):
+            gradient += sigmoid_classifier._gradient(train_X[j], train_y[j])
+        grad_norm = np.linalg.norm(gradient / batch_size)
+        
+        print("\n" + "=" * 50)
+        print(f"Reporting on iteration [{i}, {i+100}]")
+        print("Sigmoid Classifier (binary, labels -1/1)")
+        print("=" * 50)
+        print(f"Weights: {sigmoid_classifier.get_params()}")
+        print(f"Training Accuracy: {sigmoid_classifier.score(train_X, train_y):.4f}")
+        print(f"Validation Accuracy: {sigmoid_classifier.score(valid_X, valid_y):.4f}")
+        print(f"Gradient Norm: {grad_norm:.6f}")
+        
+        if grad_norm < 0.0005:
+            print("Converged!")
+            break
 
     ### END YOUR CODE
 

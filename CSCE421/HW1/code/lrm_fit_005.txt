@@ -1,0 +1,1930 @@
+Logistic multiclass classifier weights:  [[  6.68453745   0.32284776  10.42247139]
+ [ -1.09737644  15.7243352   -8.54804479]
+ [ -5.58716101 -16.04718296  -1.87442661]]
+Logistic multiclass classifier score:  0.8934782608695652
+
+--------------------------------------------------
+BEST LEARNING MODEL WEIGHTS:  [[  6.21879879   1.38151585   9.4087709 ]
+ [ -1.7331264   10.95737563  -7.97496705]
+ [ -4.48567239 -12.33889148  -1.43380385]]
+BEST LEARNING MODEL SCORE:  0.8761904761904762
+--------------------------------------------------
+
+==================================================
+Reporting on iteration [0, 100]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[-1.26352826 -9.59274137  2.57478487]
+ [ 1.26352826  9.59274137 -2.57478487]]
+Training Accuracy: 0.9704
+Validation Accuracy: 0.9762
+Gradient Norm: 0.046405
+
+==================================================
+Reporting on iteration [100, 200]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -2.12446572 -11.26369795   1.86633947]
+ [  2.12446572  11.26369795  -1.86633947]]
+Training Accuracy: 0.9726
+Validation Accuracy: 0.9762
+Gradient Norm: 0.073665
+
+==================================================
+Reporting on iteration [200, 300]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -2.82323766 -12.17660287   1.23773661]
+ [  2.82323766  12.17660287  -1.23773661]]
+Training Accuracy: 0.9733
+Validation Accuracy: 0.9762
+Gradient Norm: 0.076783
+
+==================================================
+Reporting on iteration [300, 400]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -3.32446811 -12.80567667   0.71304585]
+ [  3.32446811  12.80567667  -0.71304585]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9762
+Gradient Norm: 0.086652
+
+==================================================
+Reporting on iteration [400, 500]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -3.70274856 -13.27817599   0.31339973]
+ [  3.70274856  13.27817599  -0.31339973]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.093973
+
+==================================================
+Reporting on iteration [500, 600]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -3.99134859 -13.6489328    0.01369263]
+ [  3.99134859  13.6489328   -0.01369263]]
+Training Accuracy: 0.9726
+Validation Accuracy: 0.9762
+Gradient Norm: 0.099201
+
+==================================================
+Reporting on iteration [600, 700]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -4.2261684  -13.94113254  -0.20587996]
+ [  4.2261684   13.94113254   0.20587996]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.100251
+
+==================================================
+Reporting on iteration [700, 800]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -4.39668986 -14.18020589  -0.38209219]
+ [  4.39668986  14.18020589   0.38209219]]
+Training Accuracy: 0.9711
+Validation Accuracy: 0.9788
+Gradient Norm: 0.104001
+
+==================================================
+Reporting on iteration [800, 900]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -4.53326688 -14.3740565   -0.51703568]
+ [  4.53326688  14.3740565    0.51703568]]
+Training Accuracy: 0.9711
+Validation Accuracy: 0.9788
+Gradient Norm: 0.106386
+
+==================================================
+Reporting on iteration [900, 1000]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -4.65395238 -14.52827334  -0.61688569]
+ [  4.65395238  14.52827334   0.61688569]]
+Training Accuracy: 0.9711
+Validation Accuracy: 0.9788
+Gradient Norm: 0.105738
+
+==================================================
+Reporting on iteration [1000, 1100]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -4.75364904 -14.6537526   -0.69417229]
+ [  4.75364904  14.6537526    0.69417229]]
+Training Accuracy: 0.9711
+Validation Accuracy: 0.9788
+Gradient Norm: 0.104607
+
+==================================================
+Reporting on iteration [1100, 1200]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -4.80896471 -14.76395698  -0.7738729 ]
+ [  4.80896471  14.76395698   0.7738729 ]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.109432
+
+==================================================
+Reporting on iteration [1200, 1300]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -4.88394329 -14.84600447  -0.81878454]
+ [  4.88394329  14.84600447   0.81878454]]
+Training Accuracy: 0.9711
+Validation Accuracy: 0.9788
+Gradient Norm: 0.106757
+
+==================================================
+Reporting on iteration [1300, 1400]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -4.91844685 -14.92106563  -0.87326856]
+ [  4.91844685  14.92106563   0.87326856]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.110455
+
+==================================================
+Reporting on iteration [1400, 1500]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -4.96910184 -14.97705407  -0.9022886 ]
+ [  4.96910184  14.97705407   0.9022886 ]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.108567
+
+==================================================
+Reporting on iteration [1500, 1600]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -4.98796272 -15.02917607  -0.94288381]
+ [  4.98796272  15.02917607   0.94288381]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.112073
+
+==================================================
+Reporting on iteration [1600, 1700]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.0222222  -15.0675117   -0.96271935]
+ [  5.0222222   15.0675117    0.96271935]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.110851
+
+==================================================
+Reporting on iteration [1700, 1800]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.04676464 -15.10083196  -0.9810981 ]
+ [  5.04676464  15.10083196   0.9810981 ]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.110623
+
+==================================================
+Reporting on iteration [1800, 1900]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.06703447 -15.12777743  -0.99723536]
+ [  5.06703447  15.12777743   0.99723536]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.110503
+
+==================================================
+Reporting on iteration [1900, 2000]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.07264894 -15.15334745  -1.01732695]
+ [  5.07264894  15.15334745   1.01732695]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.112716
+
+==================================================
+Reporting on iteration [2000, 2100]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.09717381 -15.1694293   -1.02258166]
+ [  5.09717381  15.1694293    1.02258166]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.110523
+
+==================================================
+Reporting on iteration [2100, 2200]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.11540927 -15.18371127  -1.02900941]
+ [  5.11540927  15.18371127   1.02900941]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.109222
+
+==================================================
+Reporting on iteration [2200, 2300]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.13436032 -15.19423658  -1.0306029 ]
+ [  5.13436032  15.19423658   1.0306029 ]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.107189
+
+==================================================
+Reporting on iteration [2300, 2400]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.12006503 -15.21162299  -1.05142793]
+ [  5.12006503  15.21162299   1.05142793]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.111892
+
+==================================================
+Reporting on iteration [2400, 2500]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.12501069 -15.22109872  -1.05693121]
+ [  5.12501069  15.22109872   1.05693121]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.112132
+
+==================================================
+Reporting on iteration [2500, 2600]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.14526682 -15.22521862  -1.05106093]
+ [  5.14526682  15.22521862   1.05106093]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.108962
+
+==================================================
+Reporting on iteration [2600, 2700]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.13709735 -15.2345303   -1.06362226]
+ [  5.13709735  15.2345303    1.06362226]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.111673
+
+==================================================
+Reporting on iteration [2700, 2800]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.13777301 -15.2406169   -1.06922379]
+ [  5.13777301  15.2406169    1.06922379]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.112364
+
+==================================================
+Reporting on iteration [2800, 2900]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.12814412 -15.24877844  -1.07926464]
+ [  5.12814412  15.24877844   1.07926464]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.114944
+
+==================================================
+Reporting on iteration [2900, 3000]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.15395541 -15.24656541  -1.06662996]
+ [  5.15395541  15.24656541   1.06662996]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.110153
+
+==================================================
+Reporting on iteration [3000, 3100]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.14050715 -15.2536494   -1.07779824]
+ [  5.14050715  15.2536494    1.07779824]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.113338
+
+==================================================
+Reporting on iteration [3100, 3200]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.15323839 -15.25329001  -1.07293216]
+ [  5.15323839  15.25329001   1.07293216]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.111131
+
+==================================================
+Reporting on iteration [3200, 3300]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.15244215 -15.25634388  -1.07534978]
+ [  5.15244215  15.25634388   1.07534978]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.111596
+
+==================================================
+Reporting on iteration [3300, 3400]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.14197573 -15.26095173  -1.08489868]
+ [  5.14197573  15.26095173   1.08489868]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.114105
+
+==================================================
+Reporting on iteration [3400, 3500]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.16063796 -15.2575357   -1.07467903]
+ [  5.16063796  15.2575357    1.07467903]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.110461
+
+==================================================
+Reporting on iteration [3500, 3600]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.15583472 -15.26040708  -1.07829818]
+ [  5.15583472  15.26040708   1.07829818]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.111581
+
+==================================================
+Reporting on iteration [3600, 3700]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.1461634  -15.26414378  -1.08555768]
+ [  5.1461634   15.26414378   1.08555768]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.113732
+
+==================================================
+Reporting on iteration [3700, 3800]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.15536787 -15.26265987  -1.08105339]
+ [  5.15536787  15.26265987   1.08105339]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.111999
+
+==================================================
+Reporting on iteration [3800, 3900]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.16239587 -15.26109865  -1.07781293]
+ [  5.16239587  15.26109865   1.07781293]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.110668
+
+==================================================
+Reporting on iteration [3900, 4000]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.15909849 -15.26344559  -1.0791527 ]
+ [  5.15909849  15.26344559   1.0791527 ]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.111343
+
+==================================================
+Reporting on iteration [4000, 4100]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.15486346 -15.26480874  -1.08275557]
+ [  5.15486346  15.26480874   1.08275557]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.112317
+
+==================================================
+Reporting on iteration [4100, 4200]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.15824723 -15.26385586  -1.08174037]
+ [  5.15824723  15.26385586   1.08174037]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.111722
+
+==================================================
+Reporting on iteration [4200, 4300]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.1491225  -15.26647497  -1.08809905]
+ [  5.1491225   15.26647497   1.08809905]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.113667
+
+==================================================
+Reporting on iteration [4300, 4400]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.14424795 -15.26948639  -1.09091701]
+ [  5.14424795  15.26948639   1.09091701]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.114710
+
+==================================================
+Reporting on iteration [4400, 4500]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.16320587 -15.26443109  -1.07876522]
+ [  5.16320587  15.26443109   1.07876522]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.110786
+
+==================================================
+Reporting on iteration [4500, 4600]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.16419493 -15.26469126  -1.07821102]
+ [  5.16419493  15.26469126   1.07821102]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.110609
+
+==================================================
+Reporting on iteration [4600, 4700]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.1406422  -15.27166959  -1.09405478]
+ [  5.1406422   15.27166959   1.09405478]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.115575
+
+==================================================
+Reporting on iteration [4700, 4800]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.16541881 -15.26442059  -1.07835095]
+ [  5.16541881  15.26442059   1.07835095]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.110443
+
+==================================================
+Reporting on iteration [4800, 4900]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.1724725  -15.26274813  -1.07322258]
+ [  5.1724725   15.26274813   1.07322258]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.108913
+
+==================================================
+Reporting on iteration [4900, 5000]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.15714523 -15.26684846  -1.08386269]
+ [  5.15714523  15.26684846   1.08386269]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.112196
+
+==================================================
+Reporting on iteration [5000, 5100]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.14571397 -15.27034482  -1.09155549]
+ [  5.14571397  15.27034482   1.09155549]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.114608
+
+==================================================
+Reporting on iteration [5100, 5200]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.14622988 -15.27005795  -1.09111759]
+ [  5.14622988  15.27005795   1.09111759]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.114486
+
+==================================================
+Reporting on iteration [5200, 5300]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.16480016 -15.26546142  -1.07953786]
+ [  5.16480016  15.26546142   1.07953786]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.110684
+
+==================================================
+Reporting on iteration [5300, 5400]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.14712757 -15.2705732   -1.0930257 ]
+ [  5.14712757  15.2705732    1.0930257 ]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.114564
+
+==================================================
+Reporting on iteration [5400, 5500]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.16175531 -15.26685952  -1.08346205]
+ [  5.16175531  15.26685952   1.08346205]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.111531
+
+==================================================
+Reporting on iteration [5500, 5600]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.1492376  -15.26974665  -1.09175881]
+ [  5.1492376   15.26974665   1.09175881]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.114128
+
+==================================================
+Reporting on iteration [5600, 5700]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.16647772 -15.26501743  -1.07893312]
+ [  5.16647772  15.26501743   1.07893312]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.110379
+
+==================================================
+Reporting on iteration [5700, 5800]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.15919168 -15.26671417  -1.08272262]
+ [  5.15919168  15.26671417   1.08272262]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.111804
+
+==================================================
+Reporting on iteration [5800, 5900]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.14975253 -15.2689772   -1.0899674 ]
+ [  5.14975253  15.2689772    1.0899674 ]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.113859
+
+==================================================
+Reporting on iteration [5900, 6000]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.15537766 -15.26783461  -1.08598151]
+ [  5.15537766  15.26783461   1.08598151]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.112677
+
+==================================================
+Reporting on iteration [6000, 6100]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.14733977 -15.27034695  -1.09089916]
+ [  5.14733977  15.27034695   1.09089916]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.114328
+
+==================================================
+Reporting on iteration [6100, 6200]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.14422948 -15.27105066  -1.09322152]
+ [  5.14422948  15.27105066   1.09322152]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.114991
+
+==================================================
+Reporting on iteration [6200, 6300]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.14650115 -15.27044705  -1.09176299]
+ [  5.14650115  15.27044705   1.09176299]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.114525
+
+==================================================
+Reporting on iteration [6300, 6400]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.14030576 -15.27221181  -1.09691052]
+ [  5.14030576  15.27221181   1.09691052]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.115907
+
+==================================================
+Reporting on iteration [6400, 6500]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.17136506 -15.26383001  -1.07666471]
+ [  5.17136506  15.26383001   1.07666471]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.109441
+
+==================================================
+Reporting on iteration [6500, 6600]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.14974046 -15.26977707  -1.09121154]
+ [  5.14974046  15.26977707   1.09121154]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.114010
+
+==================================================
+Reporting on iteration [6600, 6700]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.17812446 -15.26286512  -1.07085134]
+ [  5.17812446  15.26286512   1.07085134]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.107909
+
+==================================================
+Reporting on iteration [6700, 6800]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.15566262 -15.26898758  -1.08691183]
+ [  5.15566262  15.26898758   1.08691183]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.112773
+
+==================================================
+Reporting on iteration [6800, 6900]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.17216832 -15.26411353  -1.07546709]
+ [  5.17216832  15.26411353   1.07546709]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.109228
+
+==================================================
+Reporting on iteration [6900, 7000]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.14818705 -15.27023177  -1.09186838]
+ [  5.14818705  15.27023177   1.09186838]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.114300
+
+==================================================
+Reporting on iteration [7000, 7100]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.15494498 -15.26864936  -1.08671064]
+ [  5.15494498  15.26864936   1.08671064]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.112838
+
+==================================================
+Reporting on iteration [7100, 7200]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.16186831 -15.26629935  -1.08032622]
+ [  5.16186831  15.26629935   1.08032622]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.111195
+
+==================================================
+Reporting on iteration [7200, 7300]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.16383639 -15.26578656  -1.07969202]
+ [  5.16383639  15.26578656   1.07969202]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.110844
+
+==================================================
+Reporting on iteration [7300, 7400]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.16889073 -15.26418728  -1.07572032]
+ [  5.16889073  15.26418728   1.07572032]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.109706
+
+==================================================
+Reporting on iteration [7400, 7500]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.15858303 -15.26737675  -1.08349465]
+ [  5.15858303  15.26737675   1.08349465]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.111988
+
+==================================================
+Reporting on iteration [7500, 7600]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.16766065 -15.26458933  -1.07681997]
+ [  5.16766065  15.26458933   1.07681997]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.109997
+
+==================================================
+Reporting on iteration [7600, 7700]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.16508947 -15.26515357  -1.07760267]
+ [  5.16508947  15.26515357   1.07760267]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.110448
+
+==================================================
+Reporting on iteration [7700, 7800]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.16769153 -15.26409093  -1.0769746 ]
+ [  5.16769153  15.26409093   1.0769746 ]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.109987
+
+==================================================
+Reporting on iteration [7800, 7900]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.15287562 -15.26814341  -1.08691577]
+ [  5.15287562  15.26814341   1.08691577]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.113116
+
+==================================================
+Reporting on iteration [7900, 8000]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.15385123 -15.26810065  -1.0872287 ]
+ [  5.15385123  15.26810065   1.0872287 ]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.113012
+
+==================================================
+Reporting on iteration [8000, 8100]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.13369263 -15.27360751  -1.10011588]
+ [  5.13369263  15.27360751   1.10011588]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9762
+Gradient Norm: 0.117142
+
+==================================================
+Reporting on iteration [8100, 8200]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.15496331 -15.26795436  -1.08595947]
+ [  5.15496331  15.26795436   1.08595947]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.112736
+
+==================================================
+Reporting on iteration [8200, 8300]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.16398431 -15.26544887  -1.08044915]
+ [  5.16398431  15.26544887   1.08044915]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.110882
+
+==================================================
+Reporting on iteration [8300, 8400]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.16118011 -15.26690762  -1.0811676 ]
+ [  5.16118011  15.26690762   1.0811676 ]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.111394
+
+==================================================
+Reporting on iteration [8400, 8500]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.15222052 -15.26936452  -1.08835848]
+ [  5.15222052  15.26936452   1.08835848]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.113391
+
+==================================================
+Reporting on iteration [8500, 8600]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.16148823 -15.26749177  -1.08137812]
+ [  5.16148823  15.26749177   1.08137812]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.111396
+
+==================================================
+Reporting on iteration [8600, 8700]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.15427493 -15.26916751  -1.08544244]
+ [  5.15427493  15.26916751   1.08544244]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.112830
+
+==================================================
+Reporting on iteration [8700, 8800]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.15748957 -15.26769277  -1.08384278]
+ [  5.15748957  15.26769277   1.08384278]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.112182
+
+==================================================
+Reporting on iteration [8800, 8900]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.16535282 -15.26576822  -1.07870788]
+ [  5.16535282  15.26576822   1.07870788]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.110542
+
+==================================================
+Reporting on iteration [8900, 9000]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.15832115 -15.26812431  -1.08209663]
+ [  5.15832115  15.26812431   1.08209663]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.111922
+
+==================================================
+Reporting on iteration [9000, 9100]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.16819436 -15.26520512  -1.07719307]
+ [  5.16819436  15.26520512   1.07719307]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.109985
+
+==================================================
+Reporting on iteration [9100, 9200]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.16422558 -15.2655064   -1.08043731]
+ [  5.16422558  15.2655064    1.08043731]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.110850
+
+==================================================
+Reporting on iteration [9200, 9300]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.1547351  -15.26860767  -1.08619408]
+ [  5.1547351   15.26860767   1.08619408]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.112816
+
+==================================================
+Reporting on iteration [9300, 9400]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.16278341 -15.26629869  -1.08077604]
+ [  5.16278341  15.26629869   1.08077604]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.111113
+
+==================================================
+Reporting on iteration [9400, 9500]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.15860149 -15.26734592  -1.08355305]
+ [  5.15860149  15.26734592   1.08355305]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.111989
+
+==================================================
+Reporting on iteration [9500, 9600]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.16799803 -15.2642291   -1.07731492]
+ [  5.16799803  15.2642291    1.07731492]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.109983
+
+==================================================
+Reporting on iteration [9600, 9700]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.17015102 -15.2637735   -1.0769014 ]
+ [  5.17015102  15.2637735    1.0769014 ]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.109628
+
+==================================================
+Reporting on iteration [9700, 9800]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.18429757 -15.26075084  -1.06658843]
+ [  5.18429757  15.26075084   1.06658843]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.106549
+
+==================================================
+Reporting on iteration [9800, 9900]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.1534672  -15.26900011  -1.08860089]
+ [  5.1534672   15.26900011   1.08860089]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.113230
+
+==================================================
+Reporting on iteration [9900, 10000]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.15989875 -15.2677792   -1.08291368]
+ [  5.15989875  15.2677792    1.08291368]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.111770
+
+==================================================
+Reporting on iteration [10000, 10100]
+Softmax Classifier (k=2, labels 0/1)
+==================================================
+Weights: [[ -5.14619333 -15.27148342  -1.09333548]
+ [  5.14619333  15.27148342   1.09333548]]
+Training Accuracy: 0.9719
+Validation Accuracy: 0.9788
+Gradient Norm: 0.114756
+
+==================================================
+Reporting on iteration [0, 100]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74507403 12.62117972 -5.22563077]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022088
+
+==================================================
+Reporting on iteration [100, 200]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74580145 12.62049375 -5.22645606]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021952
+
+==================================================
+Reporting on iteration [200, 300]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74397488 12.62117034 -5.22547145]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022199
+
+==================================================
+Reporting on iteration [300, 400]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74597507 12.6205919  -5.22624444]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021952
+
+==================================================
+Reporting on iteration [400, 500]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.75020923 12.6197928  -5.22947446]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021338
+
+==================================================
+Reporting on iteration [500, 600]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74757113 12.62010487 -5.22815153]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021671
+
+==================================================
+Reporting on iteration [600, 700]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74123867 12.62185864 -5.22449958]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022529
+
+==================================================
+Reporting on iteration [700, 800]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.75451884 12.61800669 -5.23344163]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.020649
+
+==================================================
+Reporting on iteration [800, 900]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74925271 12.61958837 -5.22915576]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021441
+
+==================================================
+Reporting on iteration [900, 1000]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74653074 12.62005713 -5.22799849]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021775
+
+==================================================
+Reporting on iteration [1000, 1100]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74062769 12.62231144 -5.22267693]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022714
+
+==================================================
+Reporting on iteration [1100, 1200]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74206014 12.62108254 -5.22494374]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022406
+
+==================================================
+Reporting on iteration [1200, 1300]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74573876 12.62077341 -5.22686575]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021938
+
+==================================================
+Reporting on iteration [1300, 1400]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74816628 12.61980777 -5.22889265]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021562
+
+==================================================
+Reporting on iteration [1400, 1500]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74315227 12.62130417 -5.22524095]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022292
+
+==================================================
+Reporting on iteration [1500, 1600]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74617903 12.6209192  -5.22681196]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021905
+
+==================================================
+Reporting on iteration [1600, 1700]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74379688 12.62097769 -5.22525381]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022224
+
+==================================================
+Reporting on iteration [1700, 1800]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74816485 12.62054347 -5.22776643]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021653
+
+==================================================
+Reporting on iteration [1800, 1900]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.7506528  12.61974642 -5.2298132 ]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021275
+
+==================================================
+Reporting on iteration [1900, 2000]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74652926 12.62053985 -5.22738284]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021827
+
+==================================================
+Reporting on iteration [2000, 2100]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74118559 12.62193602 -5.22424662]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022552
+
+==================================================
+Reporting on iteration [2100, 2200]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74550835 12.62053366 -5.22727419]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021927
+
+==================================================
+Reporting on iteration [2200, 2300]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74770242 12.61971796 -5.22909634]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021589
+
+==================================================
+Reporting on iteration [2300, 2400]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74624659 12.62034224 -5.22755052]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021837
+
+==================================================
+Reporting on iteration [2400, 2500]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74542423 12.62059396 -5.22678315]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021968
+
+==================================================
+Reporting on iteration [2500, 2600]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74498036 12.62049961 -5.22638922]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022031
+
+==================================================
+Reporting on iteration [2600, 2700]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74188018 12.62130598 -5.22459806]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022450
+
+==================================================
+Reporting on iteration [2700, 2800]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74265882 12.62162734 -5.22392129]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022431
+
+==================================================
+Reporting on iteration [2800, 2900]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74524309 12.62068744 -5.22638966]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022012
+
+==================================================
+Reporting on iteration [2900, 3000]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74786729 12.62061134 -5.22790301]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021673
+
+==================================================
+Reporting on iteration [3000, 3100]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74407329 12.62135831 -5.22566402]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022182
+
+==================================================
+Reporting on iteration [3100, 3200]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.75406459 12.61802789 -5.2321828 ]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.020771
+
+==================================================
+Reporting on iteration [3200, 3300]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.7416234  12.62182602 -5.22399893]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022525
+
+==================================================
+Reporting on iteration [3300, 3400]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74375286 12.621054   -5.2257439 ]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022199
+
+==================================================
+Reporting on iteration [3400, 3500]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74034295 12.62219306 -5.22324986]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022700
+
+==================================================
+Reporting on iteration [3500, 3600]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74148107 12.62151518 -5.22412673]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022522
+
+==================================================
+Reporting on iteration [3600, 3700]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74395881 12.62067163 -5.22681447]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022101
+
+==================================================
+Reporting on iteration [3700, 3800]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74937248 12.61951033 -5.22876258]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021454
+
+==================================================
+Reporting on iteration [3800, 3900]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.75066713 12.61931527 -5.23082306]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021198
+
+==================================================
+Reporting on iteration [3900, 4000]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.75012986 12.61923127 -5.23019341]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021286
+
+==================================================
+Reporting on iteration [4000, 4100]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74195244 12.62142512 -5.224692  ]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022440
+
+==================================================
+Reporting on iteration [4100, 4200]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74052271 12.62204734 -5.22354558]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022661
+
+==================================================
+Reporting on iteration [4200, 4300]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.7405175  12.62152495 -5.22436006]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022596
+
+==================================================
+Reporting on iteration [4300, 4400]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.7502703  12.61936602 -5.23007484]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021284
+
+==================================================
+Reporting on iteration [4400, 4500]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74889077 12.61932244 -5.22972572]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021431
+
+==================================================
+Reporting on iteration [4500, 4600]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74949755 12.61979607 -5.22894196]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021437
+
+==================================================
+Reporting on iteration [4600, 4700]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.75291632 12.6185807  -5.23199109]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.020901
+
+==================================================
+Reporting on iteration [4700, 4800]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74442983 12.62046607 -5.22596097]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022108
+
+==================================================
+Reporting on iteration [4800, 4900]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.75102145 12.61969778 -5.22978918]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021242
+
+==================================================
+Reporting on iteration [4900, 5000]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74260313 12.62123849 -5.2252273 ]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022342
+
+==================================================
+Reporting on iteration [5000, 5100]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.73960539 12.62189667 -5.22389741]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022718
+
+==================================================
+Reporting on iteration [5100, 5200]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74722374 12.6205177  -5.22771915]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021741
+
+==================================================
+Reporting on iteration [5200, 5300]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74519277 12.62063263 -5.22689319]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021982
+
+==================================================
+Reporting on iteration [5300, 5400]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74131948 12.6218316  -5.22417169]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022542
+
+==================================================
+Reporting on iteration [5400, 5500]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.73998149 12.62163884 -5.22399471]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022671
+
+==================================================
+Reporting on iteration [5500, 5600]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74067109 12.62193465 -5.22378165]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022629
+
+==================================================
+Reporting on iteration [5600, 5700]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.7454111  12.62064322 -5.22670406]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021975
+
+==================================================
+Reporting on iteration [5700, 5800]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.75462641 12.61833626 -5.23223786]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.020724
+
+==================================================
+Reporting on iteration [5800, 5900]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.75081175 12.61912797 -5.23050538]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021201
+
+==================================================
+Reporting on iteration [5900, 6000]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74956532 12.61987156 -5.22903817]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021427
+
+==================================================
+Reporting on iteration [6000, 6100]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.75058292 12.61981312 -5.22992683]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021276
+
+==================================================
+Reporting on iteration [6100, 6200]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74624498 12.62025848 -5.22708884]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021865
+
+==================================================
+Reporting on iteration [6200, 6300]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74554756 12.62075203 -5.22644298]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021982
+
+==================================================
+Reporting on iteration [6300, 6400]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74708251 12.62021479 -5.22793589]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021733
+
+==================================================
+Reporting on iteration [6400, 6500]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74663461 12.62018357 -5.22795072]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021772
+
+==================================================
+Reporting on iteration [6500, 6600]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74031043 12.62199447 -5.22384567]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022660
+
+==================================================
+Reporting on iteration [6600, 6700]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74739426 12.61995756 -5.22781996]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021705
+
+==================================================
+Reporting on iteration [6700, 6800]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74828457 12.619568   -5.22881169]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021551
+
+==================================================
+Reporting on iteration [6800, 6900]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74628832 12.62055055 -5.22674309]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021890
+
+==================================================
+Reporting on iteration [6900, 7000]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.75356508 12.61879291 -5.23177606]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.020861
+
+==================================================
+Reporting on iteration [7000, 7100]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74044045 12.62185218 -5.22404605]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022631
+
+==================================================
+Reporting on iteration [7100, 7200]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74690102 12.62029139 -5.2276429 ]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021770
+
+==================================================
+Reporting on iteration [7200, 7300]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74648905 12.62047969 -5.22698295]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021855
+
+==================================================
+Reporting on iteration [7300, 7400]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.73647834 12.62276179 -5.22115043]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.023205
+
+==================================================
+Reporting on iteration [7400, 7500]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.748189   12.62003923 -5.22818178]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021612
+
+==================================================
+Reporting on iteration [7500, 7600]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74700637 12.62057505 -5.22812021]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021736
+
+==================================================
+Reporting on iteration [7600, 7700]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74699088 12.62061724 -5.227442  ]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021783
+
+==================================================
+Reporting on iteration [7700, 7800]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74667222 12.62033434 -5.22759518]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021795
+
+==================================================
+Reporting on iteration [7800, 7900]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74392192 12.62118695 -5.22534492]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022212
+
+==================================================
+Reporting on iteration [7900, 8000]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.73892941 12.62207424 -5.22283963]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022853
+
+==================================================
+Reporting on iteration [8000, 8100]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.7453922  12.6199678  -5.22701464]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021940
+
+==================================================
+Reporting on iteration [8100, 8200]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74484772 12.62059147 -5.2264072 ]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022044
+
+==================================================
+Reporting on iteration [8200, 8300]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74135082 12.62161037 -5.22391332]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022551
+
+==================================================
+Reporting on iteration [8300, 8400]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74494794 12.62125954 -5.22588151]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022085
+
+==================================================
+Reporting on iteration [8400, 8500]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.73278837 12.62431219 -5.21779264]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.023802
+
+==================================================
+Reporting on iteration [8500, 8600]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74355672 12.62136435 -5.22485581]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022282
+
+==================================================
+Reporting on iteration [8600, 8700]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.7411939  12.62159927 -5.22414681]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022549
+
+==================================================
+Reporting on iteration [8700, 8800]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.7503819  12.61953181 -5.22976082]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021298
+
+==================================================
+Reporting on iteration [8800, 8900]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74787514 12.62019258 -5.2279185 ]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021661
+
+==================================================
+Reporting on iteration [8900, 9000]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74286371 12.6214953  -5.22532731]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022318
+
+==================================================
+Reporting on iteration [9000, 9100]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74973349 12.61970661 -5.22947628]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021379
+
+==================================================
+Reporting on iteration [9100, 9200]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74355024 12.62164359 -5.22478798]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022293
+
+==================================================
+Reporting on iteration [9200, 9300]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74574136 12.62061556 -5.22661375]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021950
+
+==================================================
+Reporting on iteration [9300, 9400]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.73477709 12.62382617 -5.21933153]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.023506
+
+==================================================
+Reporting on iteration [9400, 9500]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74582807 12.62059378 -5.22656204]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021945
+
+==================================================
+Reporting on iteration [9500, 9600]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74757244 12.6206976  -5.22781608]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021707
+
+==================================================
+Reporting on iteration [9600, 9700]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.75456048 12.61814676 -5.23237945]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.020717
+
+==================================================
+Reporting on iteration [9700, 9800]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74014012 12.62239544 -5.22315095]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022730
+
+==================================================
+Reporting on iteration [9800, 9900]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.74893566 12.62024787 -5.22876091]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.021511
+
+==================================================
+Reporting on iteration [9900, 10000]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.73960086 12.62195795 -5.22323143]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.022764
+
+==================================================
+Reporting on iteration [10000, 10100]
+Sigmoid Classifier (binary, labels -1/1)
+==================================================
+Weights: [ 0.75494609 12.61816209 -5.23242654]
+Training Accuracy: 0.9681
+Validation Accuracy: 0.9735
+Gradient Norm: 0.020679

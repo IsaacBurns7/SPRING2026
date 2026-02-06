@@ -87,3 +87,25 @@ function display_results($results, $query) {
     echo "</ol>";
 }
 ?>
+
+<h3>Site Search</h3>
+<form method="GET" action="search.php">
+    <label for="q">Search:</label>
+    <input type="text" id="q" name="q" placeholder="Enter search keyword..." 
+           value="<?php echo isset($_GET['q']) ? htmlspecialchars($_GET['q']) : ''; ?>">
+    <button type="submit">Search</button>
+</form>
+
+<div class="results">
+    
+<?php
+    $searchQuery = $_GET['q'];
+    $sanitizedQuery = sanitize($searchQuery);
+    
+    if ($sanitizedQuery === '') {
+        echo "<p>Please enter a valid search term (alphanumeric characters and spaces only).</p>";
+    } else {
+        $results = search($searchQuery);
+        display_results($results, $sanitizedQuery);
+    }
+?>

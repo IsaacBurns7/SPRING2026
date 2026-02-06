@@ -35,6 +35,7 @@ class logistic_regression_multiclass(object):
         self.learning_rate = learning_rate
         self.max_iter = max_iter
         self.k = k 
+        self.W = None  # Initialize to None so we can check if it exists
         
     def fit_miniBGD(self, X, labels, batch_size):
         """Train perceptron model on data (X,y) with mini-Batch GD.
@@ -52,17 +53,21 @@ class logistic_regression_multiclass(object):
 
 		### YOUR CODE HERE
         n_samples, n_features = X.shape
-        self.W = np.zeros(n_features)
+        if self.W is None:
+            self.W = np.zeros((self.k, n_features))
         for _ in range(self.max_iter):
             indicies = np.random.permutation(n_samples)
             X_shuffled = X[indicies]
             labels_shuffled = labels[indicies]
             # iterate from i to i + batch_size
             for i in range(0, n_samples, batch_size):
-                gradient = np.zeros(n_features)
+                gradient = np.zeros((self.k, n_features))
                 end = min(i + batch_size, n_samples)  # non-inclusive
                 for j in range(i, end):
-                    gradient += self._gradient(X_shuffled[j], labels_shuffled[j])
+                    correct_class = int(labels_shuffled[j])
+                    one_hot = np.zeros(self.k)
+                    one_hot[correct_class] = 1
+                    gradient += self._gradient(X_shuffled[j], one_hot)
                 gradient /= (end - i)  # average over actual batch size
                 self.W -= self.learning_rate * gradient
 		### END YOUR CODE
@@ -85,11 +90,11 @@ class logistic_regression_multiclass(object):
         
         if self.W is None:
             raise ValueError("Weights must be initialized to calculate gradient")
-        p = self.softmax(_x) #vector of probabilities across all classes
-        print("Gradient: ")
-        print(p)
-        gradient = np.outer(p - _y, _x) 
-        print(gradient)
+        logits = self.W @ _x
+        p = self.softmax(logits) #vector of probabilities across all classes
+        # print("raw probability - observations:", (p-_y), "input: ", _x)
+        gradient = np.outer((p - _y), _x)
+        # print("computed gradient: ", gradient)
         return gradient 
 
 		### END YOUR CODE
@@ -129,7 +134,13 @@ class logistic_regression_multiclass(object):
             preds: An array of shape [n_samples,]. Only contains 0,..,k-1.
         """
 		### YOUR CODE HERE
-
+        # X @ W.T: (n_samples, n_features) @ (n_features, K) = (n_samples, K)
+        # Each row i contains K scores for sample i
+        logits = X @ self.W.T
+        
+        # argmax along axis=1 picks the class (column) with highest score per sample
+        preds = np.argmax(logits, axis=1)
+        return preds
 		### END YOUR CODE
 
 
@@ -144,5 +155,8 @@ class logistic_regression_multiclass(object):
             score: An float. Mean accuracy of self.predict(X) wrt. labels.
         """
 		### YOUR CODE HERE
+        preds = self.predict(X)
+        mean = np.mean(preds == labels)
+        return mean
 
 		### END YOUR CODE
