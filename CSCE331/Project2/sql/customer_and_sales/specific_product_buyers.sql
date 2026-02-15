@@ -1,4 +1,4 @@
-
+-- the specific product is Mountain Bike 
 SELECT DISTINCT
 	c.CustomerID AS CustomerID,
 	c.AccountNumber AS AccountNumber,

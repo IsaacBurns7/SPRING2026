@@ -2,7 +2,7 @@
 SELECT
 	st.TerritoryID AS TerritoryID,
 	st.Name AS TerritoryName,
-	st.`Group` AS TerritoryGroup,
+	st.Group AS TerritoryGroup,
 	ROUND(AVG(order_totals.OrderTotal), 2) AS AvgOrderAmount
 FROM SalesTerritory st
 JOIN (
@@ -17,6 +17,6 @@ JOIN (
 	GROUP BY soh.TerritoryID, soh.SalesOrderID
 ) AS order_totals
 	ON order_totals.TerritoryID = st.TerritoryID
-GROUP BY st.TerritoryID, st.Name, st.`Group`
+GROUP BY st.TerritoryID, st.Name, st.Group
 ORDER BY AvgOrderAmount DESC, st.TerritoryID;
 
