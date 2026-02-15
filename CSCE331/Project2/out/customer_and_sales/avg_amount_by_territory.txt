@@ -1,0 +1,11 @@
+TerritoryID	TerritoryName	TerritoryGroup	AvgOrderAmount
+3	Central	North America	20542.88
+2	Northeast	North America	19714.13
+5	Southeast	North America	16213.28
+6	Canada	North America	4021.58
+4	Southwest	North America	3885.7
+1	Northwest	North America	3501.29
+7	France	Europe	2713.91
+10	United Kingdom	Europe	2382.95
+8	Germany	Europe	1873.96
+9	Australia	Pacific	1557.11

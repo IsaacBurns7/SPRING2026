@@ -1,0 +1,11 @@
+TerritoryID	TerritoryName	TerritoryGroup	OrderCount
+9	Australia	Pacific	6843
+4	Southwest	North America	6224
+1	Northwest	North America	4594
+6	Canada	North America	4067
+10	United Kingdom	Europe	3219
+7	France	Europe	2672
+8	Germany	Europe	2623
+5	Southeast	North America	486
+3	Central	North America	385
+2	Northeast	North America	352

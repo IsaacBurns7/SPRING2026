@@ -1,0 +1,6 @@
+ProductCategoryID	CategoryName	ProductCount
+-1	Uncategorized	209
+2	Components	134
+1	Bikes	97
+3	Clothing	35
+4	Accessories	29

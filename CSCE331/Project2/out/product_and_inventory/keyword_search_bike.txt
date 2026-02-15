@@ -1,0 +1,6 @@
+ProductID	ProductName	ListPrice
+879	All-Purpose Bike Stand	159
+877	Bike Wash - Dissolver	7.95
+876	Hitch Rack - 4-Bike	120
+710	Mountain Bike Socks, L	9.5
+709	Mountain Bike Socks, M	9.5

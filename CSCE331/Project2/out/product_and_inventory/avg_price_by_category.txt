@@ -1,0 +1,6 @@
+ProductCategoryID	CategoryName	AvgListPrice	ProductCount
+1	Bikes	1586.737010309279	97
+2	Components	469.86029850746263	134
+3	Clothing	50.99142857142857	35
+4	Accessories	34.34896551724139	29
+-1	Uncategorized	6.852631578947368	209
