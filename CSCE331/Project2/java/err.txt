@@ -1,0 +1,810 @@
+2026-02-11T22:20:28.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:20:28.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:20:38.523906Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:20:38.733629Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 66503
+2026-02-11T22:20:38.733647Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:20:38.733655Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:20:38.736505Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:20:38.911888Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:20:39.016479Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:20:39.025083Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:20:39.025226Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:20:39.025252Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:20:39.055944Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:20:39.055973Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:20:39.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:20:39.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:20:39.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:20:39.241537Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:20:39.383042Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 66613
+2026-02-11T22:20:39.383046Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:20:39.383055Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:20:39.384290Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:20:39.389341Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:20:39.431602Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:20:39.433826Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:20:39.434156Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:20:39.434197Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:20:39.458120Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:20:39.458141Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:20:39.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:20:49.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:20:49.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:20:49.683204Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:20:49.867790Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 66721
+2026-02-11T22:20:49.867796Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:20:49.867802Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:20:49.870414Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:20:49.877192Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:20:49.977743Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:20:49.982725Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:20:49.982811Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:20:49.982825Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:20:50.007441Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:20:50.007462Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:20:50.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:21:00.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:21:00.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:21:00.439467Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:21:00.653433Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 66839
+2026-02-11T22:21:00.653454Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:21:00.653463Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:21:00.660088Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:21:00.696491Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:21:00.800564Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:21:00.811161Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:21:00.811261Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:21:00.811278Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:21:00.838271Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:21:00.838296Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:21:00.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:21:10.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:21:11.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:21:11.206530Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:21:11.433549Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 66947
+2026-02-11T22:21:11.433816Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:21:11.433883Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:21:11.441449Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:21:11.477399Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:21:11.623465Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:21:11.671770Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:21:11.671978Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:21:11.672118Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:21:11.703183Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:21:11.703213Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:21:11.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:24:05.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:24:05.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:24:05.250149Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:24:05.409737Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 67733
+2026-02-11T22:24:05.409761Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:24:05.409767Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:24:05.417084Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:24:05.434115Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:24:05.556965Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:24:05.570649Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:24:05.570755Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:24:05.570772Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:24:05.595245Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:24:05.595266Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:24:05.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:24:15.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:24:15.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:24:15.821299Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:24:16.002546Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 67844
+2026-02-11T22:24:16.002554Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:24:16.002562Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:24:16.035412Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:24:16.044416Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:24:16.180360Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:24:16.185493Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:24:16.185627Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:24:16.185656Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:24:16.220839Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:24:16.220884Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:24:16.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:24:26.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:24:26.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:24:26.468971Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:24:26.620043Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 67951
+2026-02-11T22:24:26.620048Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:24:26.620054Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:24:26.623403Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:24:26.629606Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:24:26.723697Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:24:26.728715Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:24:26.728804Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:24:26.728817Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:24:26.754907Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:24:26.754926Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:24:26.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:24:36.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:24:36.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:24:36.981670Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:24:37.124983Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 68274
+2026-02-11T22:24:37.124990Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:24:37.124995Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:24:37.126340Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:24:37.131461Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:24:37.198209Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:24:37.202288Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:24:37.202374Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:24:37.202387Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:24:37.227222Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:24:37.227241Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:24:37.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:24:49.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:24:49.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:24:49.905846Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:24:50.047205Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 68817
+2026-02-11T22:24:50.047211Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:24:50.047217Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:24:50.048858Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:24:50.054705Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:24:50.134830Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:24:50.139178Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:24:50.139275Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:24:50.139288Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:24:50.164605Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:24:50.164625Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:24:50.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:25:00.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:25:00.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:25:00.483847Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:25:00.677187Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 69070
+2026-02-11T22:25:00.677203Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:25:00.677209Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:25:00.680395Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:25:00.694355Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:25:00.782914Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:25:00.789875Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:25:00.789956Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:25:00.789973Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:25:00.818405Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:25:00.818427Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:25:00.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:25:10.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:25:11.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:25:11.217193Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:25:11.414789Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 69186
+2026-02-11T22:25:11.414809Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:25:11.414816Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:25:11.422333Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:25:11.443049Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:25:11.548344Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:25:11.566993Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:25:11.567125Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:25:11.567165Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:25:11.599862Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:25:11.599914Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:25:11.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:25:21.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:25:21.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:25:21.830878Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:25:22.026021Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 69293
+2026-02-11T22:25:22.026030Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:25:22.026036Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:25:22.029264Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:25:22.036670Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:25:22.125287Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:25:22.131682Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:25:22.131770Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:25:22.131784Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:25:22.158056Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:25:22.158077Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:25:22.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:25:32.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:25:32.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:25:32.481664Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:25:32.669973Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 69403
+2026-02-11T22:25:32.669990Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:25:32.669996Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:25:32.677472Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:25:32.693638Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:25:32.804813Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:25:32.815877Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:25:32.815983Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:25:32.815999Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:25:32.842875Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:25:32.842899Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:25:32.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:25:43.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:25:43.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:25:43.180463Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:25:43.364668Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 69525
+2026-02-11T22:25:43.364686Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:25:43.364691Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:25:43.372168Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:25:43.388710Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:25:43.644735Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:25:43.675663Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:25:43.675770Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:25:43.675786Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:25:43.732075Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:25:43.732092Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:25:43.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:25:53.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:25:53.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:25:53.976000Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:25:54.166043Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 69638
+2026-02-11T22:25:54.166051Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:25:54.166056Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:25:54.169339Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:25:54.176227Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:25:54.338045Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:25:54.348412Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:25:54.348562Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:25:54.348582Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:25:54.388244Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:25:54.388272Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:25:54.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:26:04.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:26:04.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:26:05.096517Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:26:05.317409Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 69765
+2026-02-11T22:26:05.317426Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:26:05.317432Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:26:05.324011Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:26:05.340457Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:26:05.617022Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:26:05.645935Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:26:05.646165Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:26:05.646199Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:26:05.695590Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:26:05.695615Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:26:05.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:26:14.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:26:14.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:26:15.213546Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:26:15.397188Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 69889
+2026-02-11T22:26:15.397356Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:26:15.397362Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:26:15.408528Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:26:15.430971Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:26:15.533137Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:26:15.544972Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:26:15.545079Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:26:15.545090Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:26:15.574875Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:26:15.574903Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:26:15.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:26:25.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:26:25.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:26:26.085040Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:26:26.287321Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 69999
+2026-02-11T22:26:26.287524Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:26:26.287534Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:26:26.295962Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:26:26.320655Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:26:26.419990Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:26:26.436406Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:26:26.436498Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:26:26.436512Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:26:26.459858Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:26:26.459880Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:26:26.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:26:36.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:26:36.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:26:36.707155Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:26:36.902771Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 70120
+2026-02-11T22:26:36.902780Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:26:36.902786Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:26:36.906981Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:26:36.916382Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:26:37.076488Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:26:37.083674Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:26:37.083803Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:26:37.083814Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:26:37.114280Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:26:37.114301Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:26:37.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:26:47.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:26:47.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:26:47.433161Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:26:47.780906Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 70228
+2026-02-11T22:26:47.780973Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:26:47.781035Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:26:47.805265Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:26:47.839565Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:26:48.049890Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:26:48.071755Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:26:48.072315Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:26:48.072352Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:26:48.124572Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:26:48.124600Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:26:48.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:26:57.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:26:57.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:26:57.392981Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:26:57.572711Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 70338
+2026-02-11T22:26:57.572716Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:26:57.572721Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:26:57.575864Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:26:57.583097Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:26:57.690389Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:26:57.696933Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:26:57.697037Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:26:57.697052Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:26:57.723108Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:26:57.723130Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:26:57.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:27:07.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:27:07.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:27:07.973771Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:27:08.171087Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 70444
+2026-02-11T22:27:08.171092Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:27:08.171098Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:27:08.176807Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:27:08.187577Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:27:08.290353Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:27:08.316240Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:27:08.316328Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:27:08.316341Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:27:08.343618Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:27:08.343638Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:27:08.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:27:18.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:27:18.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:27:18.608079Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:27:18.777430Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 70558
+2026-02-11T22:27:18.777435Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:27:18.777441Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:27:18.780498Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:27:18.787561Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:27:18.894967Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:27:18.899844Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:27:18.899943Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:27:18.899957Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:27:18.926062Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:27:18.926082Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:27:18.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:27:29.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:27:29.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:27:29.155797Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:27:29.315074Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 70671
+2026-02-11T22:27:29.315080Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:27:29.315086Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:27:29.319051Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:27:29.327868Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:27:29.417114Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:27:29.442739Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:27:29.442841Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:27:29.442854Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:27:29.469776Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:27:29.469795Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:27:29.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:27:39.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:27:39.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:27:39.716164Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:27:39.864258Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 70780
+2026-02-11T22:27:39.864264Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:27:39.864270Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:27:39.868502Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:27:39.876345Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:27:39.989157Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:27:39.996973Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:27:39.997064Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:27:39.997076Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:27:40.021876Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:27:40.021895Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:27:40.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:27:50.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:27:50.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:27:50.338626Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:27:50.534774Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 70898
+2026-02-11T22:27:50.534789Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:27:50.534797Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:27:50.543229Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:27:50.564688Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:27:50.669486Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:27:50.690889Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:27:50.690968Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:27:50.690981Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:27:50.716490Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:27:50.716512Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:27:50.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:28:00.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:28:00.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:28:00.966762Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:28:01.173640Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 71030
+2026-02-11T22:28:01.173646Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:28:01.173695Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:28:01.177472Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:28:01.187207Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:28:01.289628Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:28:01.298002Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:28:01.298169Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:28:01.298211Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:28:01.326905Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:28:01.326925Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:28:01.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:28:11.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:28:11.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:28:11.554316Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:28:11.694147Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 71137
+2026-02-11T22:28:11.694152Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:28:11.694157Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:28:11.695399Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:28:11.700683Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:28:11.809041Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:28:11.814410Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:28:11.814508Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:28:11.814518Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:28:11.846366Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:28:11.846387Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:28:11.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:28:21.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:28:22.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:28:22.171644Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:28:22.355098Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 71385
+2026-02-11T22:28:22.355104Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:28:22.355111Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:28:22.358996Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:28:22.366336Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:28:22.443062Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:28:22.447876Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:28:22.447951Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:28:22.447965Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:28:22.471591Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:28:22.471614Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:28:22.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:28:32.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:28:32.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:28:32.699626Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:28:32.903669Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 71501
+2026-02-11T22:28:32.903678Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:28:32.903684Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:28:32.907277Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:28:32.917564Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:28:33.007530Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:28:33.013026Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:28:33.013112Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:28:33.013143Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:28:33.040050Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:28:33.040070Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:28:33.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:28:43.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:28:43.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:28:43.290034Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:28:43.482476Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 71619
+2026-02-11T22:28:43.482483Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:28:43.482491Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:28:43.486060Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:28:43.494053Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:28:43.575863Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:28:43.580636Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:28:43.580755Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:28:43.580767Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:28:43.610875Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:28:43.610917Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:28:43.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:28:53.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:28:53.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:28:53.842842Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:28:53.991587Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 71725
+2026-02-11T22:28:53.991592Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:28:53.991597Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:28:53.994927Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:28:54.002382Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:28:54.124944Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:28:54.130327Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:28:54.130418Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:28:54.130434Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:28:54.157219Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:28:54.157241Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:28:54.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:29:04.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:29:04.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:29:04.393175Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:29:04.584353Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 71831
+2026-02-11T22:29:04.584361Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:29:04.584373Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:29:04.588037Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:29:04.596319Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:29:04.686981Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:29:04.692231Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:29:04.692319Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:29:04.692670Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:29:04.717642Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:29:04.717665Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:29:04.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:29:14.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:29:14.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:29:14.960844Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:29:15.155858Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 71939
+2026-02-11T22:29:15.155867Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:29:15.155873Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:29:15.159109Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:29:15.166921Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:29:15.262732Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:29:15.268046Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:29:15.268152Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:29:15.268175Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:29:15.297034Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:29:15.297054Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:29:15.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:53:35.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:53:35.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:53:46.850556Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:53:46.998483Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 81628
+2026-02-11T22:53:46.998498Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:53:46.998504Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:53:47.000881Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:53:47.164323Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:53:47.318795Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:53:47.329219Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:53:47.329376Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:53:47.329399Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:53:47.364247Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:53:47.364272Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:53:47.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:53:47.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:53:47.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:53:47.550826Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:53:47.693107Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 81986
+2026-02-11T22:53:47.693115Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:53:47.693123Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:53:47.694684Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:53:47.700000Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:53:47.746674Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:53:47.749935Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:53:47.750227Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:53:47.750482Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:53:47.777835Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:53:47.777860Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:53:47.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:53:57.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:53:57.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:53:58.002489Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:53:58.145782Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 82204
+2026-02-11T22:53:58.145787Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:53:58.145792Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:53:58.147044Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:53:58.152189Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:53:58.258637Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:53:58.263101Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:53:58.263181Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:53:58.263196Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:53:58.291582Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:53:58.291645Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:53:58.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:54:08.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:54:08.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:54:08.518273Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:54:08.680688Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 82482
+2026-02-11T22:54:08.680696Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:54:08.680701Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:54:08.682176Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:54:08.687650Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:54:08.825897Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:54:08.831212Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:54:08.831295Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:54:08.831310Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:54:08.858106Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:54:08.858127Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:54:08.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:54:18.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:54:19.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:54:19.083441Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:54:19.226496Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 82678
+2026-02-11T22:54:19.226501Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:54:19.226506Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:54:19.228201Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:54:19.233714Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:54:19.337589Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:54:19.341772Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:54:19.341848Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:54:19.341857Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:54:19.369136Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:54:19.369157Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:54:19.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:54:29.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:54:29.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:54:29.600273Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:54:29.800067Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 82967
+2026-02-11T22:54:29.800076Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:54:29.800082Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:54:29.802842Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:54:29.810441Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:54:29.907766Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:54:29.912228Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:54:29.912324Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:54:29.912335Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:54:29.939031Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:54:29.939054Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:54:29.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:54:40.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:54:40.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:54:40.209364Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:54:40.414928Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 83261
+2026-02-11T22:54:40.414937Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:54:40.414944Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:54:40.418575Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:54:40.427743Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:54:40.541639Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:54:40.546908Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:54:40.546999Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:54:40.547015Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:54:40.585510Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:54:40.585531Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:54:40.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:54:50.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:54:50.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:54:50.947389Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:54:51.146942Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 83467
+2026-02-11T22:54:51.147163Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:54:51.147174Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:54:51.156029Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:54:51.180973Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:54:51.292624Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:54:51.307267Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:54:51.307388Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:54:51.307408Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:54:51.338352Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:54:51.338373Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:54:51.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:55:01.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:55:01.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:55:01.754796Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:55:01.977733Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 83667
+2026-02-11T22:55:01.977751Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:55:01.977758Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:55:01.985466Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:55:02.004160Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:55:02.106085Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:55:02.132343Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:55:02.132498Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:55:02.132563Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:55:02.172736Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:55:02.172788Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:55:02.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:55:12.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:55:12.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:55:12.476893Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:55:12.706738Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 83861
+2026-02-11T22:55:12.706756Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:55:12.706763Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:55:12.710642Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:55:12.720023Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:55:12.832265Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:55:12.839204Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:55:12.839332Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:55:12.839361Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:55:12.869244Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:55:12.869267Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:55:12.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:55:23.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:55:23.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:55:23.110389Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:55:23.308641Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 84075
+2026-02-11T22:55:23.308651Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:55:23.308658Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:55:23.315444Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:55:23.324178Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:55:23.420693Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:55:23.430166Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:55:23.430270Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:55:23.430286Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:55:23.454759Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:55:23.454781Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:55:23.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:55:33.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:55:33.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:55:33.704037Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:55:33.880362Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 84282
+2026-02-11T22:55:33.880370Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:55:33.880376Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:55:33.883943Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:55:33.891905Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:55:33.980193Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:55:33.985979Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:55:33.986059Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:55:33.986070Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:55:34.010609Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:55:34.010630Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:55:34.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:55:44.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:55:44.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:55:44.246891Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:55:44.419344Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 84846
+2026-02-11T22:55:44.419349Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:55:44.419356Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:55:44.422534Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:55:44.431308Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:55:44.527868Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:55:44.533408Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:55:44.533483Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:55:44.533493Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:55:44.557979Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:55:44.558001Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:55:44.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:55:54.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:55:54.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:55:54.940800Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:55:55.197788Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 85123
+2026-02-11T22:55:55.197942Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:55:55.197949Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:55:55.213196Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:55:55.261185Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:55:55.371286Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:55:55.397634Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:55:55.397767Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:55:55.397785Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:55:55.439433Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:55:55.439456Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:55:55.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:56:05.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:56:05.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:56:05.698150Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:56:05.922554Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 85317
+2026-02-11T22:56:05.922562Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:56:05.922570Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:56:05.926892Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:56:05.937253Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:56:06.051741Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:56:06.058141Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:56:06.058509Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:56:06.058524Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:56:06.184775Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:56:06.184813Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:56:06.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:56:16.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:56:16.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:56:16.619840Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:56:16.896706Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 85566
+2026-02-11T22:56:16.896877Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:56:16.896884Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:56:16.907551Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:56:16.945969Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:56:17.082016Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:56:17.098032Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:56:17.098122Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:56:17.098136Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:56:17.124663Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:56:17.124687Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:56:17.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:56:27.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:56:27.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:56:27.520996Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:56:27.708898Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 85824
+2026-02-11T22:56:27.708917Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:56:27.708923Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:56:27.717981Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:56:27.744277Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:56:27.864583Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:56:27.899322Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:56:27.899451Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:56:27.899467Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:56:27.929068Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:56:27.929091Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:56:27.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:56:38.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:56:38.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:56:38.311273Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:56:38.521003Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 86017
+2026-02-11T22:56:38.521186Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:56:38.521195Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:56:38.530165Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:56:38.554706Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:56:38.751782Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:56:38.770996Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:56:38.771240Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:56:38.771282Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:56:38.818739Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:56:38.818767Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:56:38.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended
+2026-02-11T22:56:48.6NZ mysqld_safe Logging to '/opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.err'.
+2026-02-11T22:56:49.6NZ mysqld_safe Starting mysqld daemon with databases from /opt/homebrew/var/mysql
+2026-02-11T22:56:49.189082Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-02-11T22:56:49.412598Z 0 [System] [MY-010116] [Server] /opt/homebrew/opt/mysql/bin/mysqld (mysqld 9.6.0) starting as process 86358
+2026-02-11T22:56:49.412784Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-02-11T22:56:49.412791Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8589934592 bytes of physical memory.
+2026-02-11T22:56:49.423429Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2026-02-11T22:56:49.493245Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-02-11T22:56:49.733871Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-02-11T22:56:49.747472Z 1 [ERROR] [MY-014060] [Server] Invalid MySQL server upgrade: Cannot upgrade from 80200 to 90600. Upgrade to next major version is only allowed from the last LTS release, which version 80200 is not.
+2026-02-11T22:56:49.747570Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-02-11T22:56:49.747593Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-02-11T22:56:49.788059Z 0 [System] [MY-010910] [Server] /opt/homebrew/opt/mysql/bin/mysqld: Shutdown complete (mysqld 9.6.0)  Homebrew.
+2026-02-11T22:56:49.788084Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+2026-02-11T22:56:49.6NZ mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/Johns-MacBook-Pro-6.local.pid ended

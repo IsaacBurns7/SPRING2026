@@ -1,0 +1,46 @@
+Run
+
+	make
+
+to compile.
+
+Run
+
+	java Gui
+	java JdbcExample
+
+etc. to run.
+
+For JDBC, install libmysql-java 
+
+	* Ubuntu Linux (other distros may be similar)
+
+        Go to https://dev.mysql.com/downloads/connector/j/ to download the package and install it.
+
+	- on older Ubuntu installs, the following may work.
+
+	   sudo apt install libmysql-java
+
+
+	* OSX / windows
+	
+	1. download from https://dev.mysql.com/downloads/connector/j/
+
+	2. follow instructions in 
+
+	https://dev.mysql.com/doc/connector-j/en/connector-j-installing.html
+
+Once the JDBC mysql connector is installed, run the following in your shell:
+
+	export CLASSPATH=$CLASSPATH:/usr/share/java/mysql-connector-java.jar
+	
+	or
+
+	export CLASSPATH=$CLASSPATH:/usr/share/java/mysql-connector-java-8.0.26.jar 
+	(replace the version number 8.0.26 with your specific version)
+
+
+If it runs but you get an error, trying disabling SSL, by changing the DB_URL definition to include useSSL=false.
+
+	static final String DB_URL = "jdbc:mysql://localhost:3306?useSSL=false";
+
