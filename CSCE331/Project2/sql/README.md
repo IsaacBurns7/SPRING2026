@@ -1,16 +1,7 @@
+cat contents
+ find . -name '*.sql' -type f -print0 | sort -z | xargs -0 -I{} sh -c 'printf "\n===== %s =====\n" "{}"; cat "{}"' > output.txt
+
 This folder contains a list of queries against the AdventureWorks database.
-
-Each query has a corresponding txt file in the "out" subfolder. 
-
-<Schema>.<TableName> -> <Schema>_<TableName> for schemas
-perl -pi -e '
-my @schemas = qw(Person Sales Purchasing HumanResources Production dbo);
-foreach my $schema (@schemas) {
-    s/\b$schema\.([A-Za-z0-9_]+)\b/$1/g;
-}
-' *.sql
-
-
 
 First 20 queries written, version 1, tables used:
 - Customer

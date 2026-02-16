@@ -1,0 +1,58 @@
+Table -> columns referenced across all SQL files
+
+customer:
+  - AccountNumber
+  - CustomerID
+  - CustomerType
+
+product:
+  - ListPrice
+  - Name
+  - ProductID
+  - ProductSubcategoryID
+  - ReorderPoint
+
+productcategory:
+  - Name
+  - ProductCategoryID
+
+productinventory:
+  - ProductID
+  - Quantity
+
+productsubcategory:
+  - Name
+  - ProductCategoryID
+  - ProductSubcategoryID
+
+productvendor:
+  - ProductID
+  - VendorID
+
+salesorderdetail:
+  - LineTotal
+  - OrderQty
+  - ProductID
+  - SalesOrderDetailID
+  - SalesOrderID
+
+salesorderheader:
+  - CustomerID
+  - OrderDate
+  - SalesOrderID
+  - SalesPersonID
+  - TerritoryID
+  - TotalDue
+
+salesperson:
+  - CommissionPct
+  - SalesPersonID
+  - TerritoryID
+
+salesterritory:
+  - Group
+  - Name
+  - TerritoryID
+
+vendor:
+  - VendorID

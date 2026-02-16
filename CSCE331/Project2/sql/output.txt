@@ -1,0 +1,343 @@
+
+===== ./customer_and_sales/average_order_value.sql =====
+
+SELECT
+	c.CustomerID AS CustomerID,
+	c.AccountNumber AS AccountNumber,
+	c.CustomerType AS CustomerType,
+	ROUND(AVG(order_totals.OrderTotal), 2) AS AvgOrderValue
+FROM Customer c
+JOIN (
+	SELECT
+		soh.CustomerID AS CustomerID,
+		soh.SalesOrderID AS SalesOrderID,
+		SUM(sod.LineTotal) AS OrderTotal
+	FROM SalesOrderHeader soh
+	JOIN SalesOrderDetail sod
+		ON sod.SalesOrderID = soh.SalesOrderID
+	GROUP BY soh.CustomerID, soh.SalesOrderID
+) AS order_totals
+	ON order_totals.CustomerID = c.CustomerID
+GROUP BY c.CustomerID, c.AccountNumber, c.CustomerType
+ORDER BY AvgOrderValue DESC, c.CustomerID;
+
+
+===== ./customer_and_sales/avg_amount_by_territory.sql =====
+
+SELECT
+	st.TerritoryID AS TerritoryID,
+	st.Name AS TerritoryName,
+	st.Group AS TerritoryGroup,
+	ROUND(AVG(order_totals.OrderTotal), 2) AS AvgOrderAmount
+FROM SalesTerritory st
+JOIN (
+	SELECT
+		soh.TerritoryID AS TerritoryID,
+		soh.SalesOrderID AS SalesOrderID,
+		SUM(sod.LineTotal) AS OrderTotal
+	FROM SalesOrderHeader soh
+	JOIN SalesOrderDetail sod
+		ON sod.SalesOrderID = soh.SalesOrderID
+	WHERE soh.TerritoryID IS NOT NULL
+	GROUP BY soh.TerritoryID, soh.SalesOrderID
+) AS order_totals
+	ON order_totals.TerritoryID = st.TerritoryID
+GROUP BY st.TerritoryID, st.Name, st.Group
+ORDER BY AvgOrderAmount DESC, st.TerritoryID;
+
+
+===== ./customer_and_sales/count_orders_per_customer.sql =====
+SELECT c.CustomerID as CustomerID, 
+    c.AccountNumber as AccountNumber, 
+    c.CustomerType as CustomerType,
+    COUNT(soh.SalesOrderID) AS OrderCount
+FROM Customer c 
+JOIN SalesOrderHeader soh 
+    ON c.CustomerID = soh.CustomerID
+GROUP BY c.CustomerID, c.AccountNumber, c.CustomerType
+ORDER BY c.CustomerID;
+===== ./customer_and_sales/list_customers_with_orders.sql =====
+SELECT c.CustomerID as CustomerID, 
+    c.AccountNumber as AccountNumber, 
+    c.CustomerType as CustomerType,
+    JSON_ARRAYAGG(
+        JSON_OBJECT( 
+            'SalesOrderID', soh.SalesOrderID,
+            'OrderDate', soh.OrderDate,
+            'TotalDue', soh.TotalDue
+        )
+    ) AS Orders
+FROM Customer c 
+JOIN SalesOrderHeader soh ON c.CustomerID = soh.CustomerID
+GROUP BY c.CustomerID, c.AccountNumber, c.CustomerType;
+===== ./customer_and_sales/orders_by_territory.sql =====
+SELECT
+	st.TerritoryID AS TerritoryID,
+	st.Name AS TerritoryName,
+	st.Group AS TerritoryGroup,
+	COUNT(soh.SalesOrderID) AS OrderCount
+FROM SalesTerritory st
+LEFT JOIN SalesOrderHeader soh
+	ON soh.TerritoryID = st.TerritoryID
+GROUP BY st.TerritoryID, st.Name, st.Group
+ORDER BY OrderCount DESC, st.TerritoryID;
+
+
+===== ./customer_and_sales/recent_orders.sql =====
+SELECT
+	c.CustomerID AS CustomerID,
+	c.AccountNumber AS AccountNumber,
+	c.CustomerType AS CustomerType,
+	soh.SalesOrderID AS SalesOrderID,
+	soh.OrderDate AS OrderDate,
+	ROUND(soh.TotalDue, 2) AS TotalDue
+FROM Customer c
+JOIN SalesOrderHeader soh
+	ON soh.CustomerID = c.CustomerID
+ORDER BY soh.OrderDate DESC, soh.SalesOrderID;
+
+
+===== ./customer_and_sales/salesperson_tracking.sql =====
+SELECT
+	soh.SalesOrderID AS SalesOrderID,
+	soh.OrderDate AS OrderDate,
+	c.CustomerID AS CustomerID,
+	c.AccountNumber AS AccountNumber,
+	soh.SalesPersonID AS SalesPersonID,
+	sp.TerritoryID AS SalesPersonTerritoryID,
+	sp.CommissionPct AS CommissionPct,
+	ROUND(soh.TotalDue, 2) AS TotalDue
+FROM SalesOrderHeader soh
+JOIN Customer c
+	ON c.CustomerID = soh.CustomerID
+JOIN SalesPerson sp 
+-- a LOT of sales order headers DO NOT have a specific salesperson attached
+    -- so a lot of salesorderheaders WILL NOT appear. left join if u want those unattached sales 
+	ON sp.SalesPersonID = soh.SalesPersonID
+ORDER BY soh.OrderDate DESC, soh.SalesOrderID;
+
+
+===== ./customer_and_sales/specific_product_buyers.sql =====
+-- the specific product is Mountain Bike 
+SELECT DISTINCT
+	c.CustomerID AS CustomerID,
+	c.AccountNumber AS AccountNumber,
+	c.CustomerType AS CustomerType,
+	p.ProductID AS ProductID,
+	p.Name AS ProductName,
+	soh.SalesOrderID AS SalesOrderID,
+	soh.OrderDate AS OrderDate
+FROM Customer c
+JOIN SalesOrderHeader soh
+	ON soh.CustomerID = c.CustomerID
+JOIN SalesOrderDetail sod
+	ON sod.SalesOrderID = soh.SalesOrderID
+JOIN Product p
+	ON p.ProductID = sod.ProductID
+WHERE p.Name LIKE '%Mountain Bike%'
+ORDER BY c.CustomerID, soh.OrderDate DESC, soh.SalesOrderID;
+
+
+===== ./customer_and_sales/top_10_customers.sql =====
+
+SELECT
+	c.CustomerID AS CustomerID,
+	c.AccountNumber AS AccountNumber,
+	c.CustomerType AS CustomerType,
+	ROUND(SUM(sod.LineTotal), 2) AS TotalSales
+FROM Customer c
+JOIN SalesOrderHeader soh
+	ON soh.CustomerID = c.CustomerID
+JOIN SalesOrderDetail sod
+	ON sod.SalesOrderID = soh.SalesOrderID
+GROUP BY c.CustomerID, c.AccountNumber, c.CustomerType
+ORDER BY TotalSales DESC
+LIMIT 10;
+
+
+===== ./customer_and_sales/total_sales_per_customer.sql =====
+
+SELECT
+	c.CustomerID AS CustomerID,
+	c.AccountNumber AS AccountNumber,
+	c.CustomerType AS CustomerType,
+	COUNT(DISTINCT soh.SalesOrderID) AS OrderCount,
+	ROUND(SUM(sod.LineTotal), 2) AS TotalSales
+FROM Customer c
+JOIN SalesOrderHeader soh
+	ON soh.CustomerID = c.CustomerID
+JOIN SalesOrderDetail sod
+	ON sod.SalesOrderID = soh.SalesOrderID
+GROUP BY c.CustomerID, c.AccountNumber, c.CustomerType
+ORDER BY TotalSales DESC, c.CustomerID;
+
+
+===== ./product_and_inventory/above_average_price.sql =====
+SELECT
+	p.ProductID,
+	p.Name AS ProductName,
+	p.ListPrice
+FROM product AS p
+WHERE
+	p.ListPrice > (
+		SELECT AVG(p2.ListPrice)
+		FROM product AS p2
+	)
+ORDER BY
+	p.ListPrice DESC,
+	ProductName;
+
+
+===== ./product_and_inventory/avg_price_by_category.sql =====
+SELECT
+	COALESCE(pc.ProductCategoryID, -1) AS ProductCategoryID,
+	COALESCE(pc.Name, 'Uncategorized') AS CategoryName,
+	AVG(p.ListPrice) AS AvgListPrice,
+	COUNT(*) AS ProductCount
+FROM product AS p
+LEFT JOIN productsubcategory AS ps
+	ON ps.ProductSubcategoryID = p.ProductSubcategoryID
+LEFT JOIN productcategory AS pc
+	ON pc.ProductCategoryID = ps.ProductCategoryID
+GROUP BY
+	COALESCE(pc.ProductCategoryID, -1),
+	COALESCE(pc.Name, 'Uncategorized')
+ORDER BY
+	AvgListPrice DESC,
+	CategoryName;
+
+
+===== ./product_and_inventory/keyword_search_bike.sql =====
+SELECT
+	p.ProductID,
+	p.Name AS ProductName,
+	p.ListPrice
+FROM product AS p
+WHERE
+	p.Name LIKE '%Bike%'
+ORDER BY
+	ProductName;
+
+
+===== ./product_and_inventory/low_stock_alerts.sql =====
+SELECT
+	p.ProductID,
+	p.Name AS ProductName,
+	p.ReorderPoint,
+	COALESCE(SUM(pi.Quantity), 0) AS TotalQuantity
+FROM product AS p
+LEFT JOIN productinventory AS pi
+	ON pi.ProductID = p.ProductID
+GROUP BY
+	p.ProductID,
+	p.Name,
+	p.ReorderPoint
+HAVING
+	TotalQuantity < p.ReorderPoint
+ORDER BY
+	TotalQuantity ASC,
+	ProductName;
+
+
+===== ./product_and_inventory/multi_vendor_products.sql =====
+SELECT
+	p.ProductID,
+	p.Name AS ProductName,
+	COUNT(DISTINCT pv.VendorID) AS VendorCount
+FROM productvendor AS pv
+INNER JOIN product AS p
+	ON p.ProductID = pv.ProductID
+INNER JOIN vendor AS v
+	ON v.VendorID = pv.VendorID
+GROUP BY
+	p.ProductID,
+	p.Name
+HAVING
+	VendorCount > 1
+ORDER BY
+	VendorCount DESC,
+	ProductName;
+
+
+===== ./product_and_inventory/product_count_by_category.sql =====
+SELECT
+	COALESCE(pc.ProductCategoryID, -1) AS ProductCategoryID,
+	COALESCE(pc.Name, 'Uncategorized') AS CategoryName,
+	COUNT(p.ProductID) AS ProductCount
+FROM product AS p
+LEFT JOIN productsubcategory AS ps
+	ON ps.ProductSubcategoryID = p.ProductSubcategoryID
+LEFT JOIN productcategory AS pc
+	ON pc.ProductCategoryID = ps.ProductCategoryID
+GROUP BY
+	COALESCE(pc.ProductCategoryID, -1),
+	COALESCE(pc.Name, 'Uncategorized')
+ORDER BY
+	ProductCount DESC,
+	CategoryName;
+
+
+===== ./product_and_inventory/product_hierarchy.sql =====
+SELECT
+	p.ProductID,
+	p.Name AS ProductName,
+	ps.ProductSubcategoryID,
+	ps.Name AS SubcategoryName,
+	pc.ProductCategoryID,
+	pc.Name AS CategoryName
+FROM product AS p
+LEFT JOIN productsubcategory AS ps
+	ON ps.ProductSubcategoryID = p.ProductSubcategoryID
+LEFT JOIN productcategory AS pc
+	ON pc.ProductCategoryID = ps.ProductCategoryID
+ORDER BY
+	CategoryName,
+	SubcategoryName,
+	ProductName;
+
+
+===== ./product_and_inventory/products_never_sold.sql =====
+SELECT
+	p.ProductID,
+	p.Name AS ProductName
+FROM product AS p
+LEFT JOIN salesorderdetail AS sod
+	ON sod.ProductID = p.ProductID
+WHERE
+	sod.SalesOrderDetailID IS NULL
+ORDER BY
+	ProductName;
+
+
+===== ./product_and_inventory/top_5_ordered_products.sql =====
+SELECT
+	p.ProductID,
+	p.Name AS ProductName,
+	SUM(sod.OrderQty) AS TotalOrderedQuantity
+FROM salesorderdetail AS sod
+INNER JOIN product AS p
+	ON p.ProductID = sod.ProductID
+GROUP BY
+	p.ProductID,
+	p.Name
+ORDER BY
+	TotalOrderedQuantity DESC,
+	ProductName
+LIMIT 5;
+
+
+===== ./product_and_inventory/total_stock_per_product.sql =====
+SELECT
+	p.ProductID,
+	p.Name AS ProductName,
+	COALESCE(SUM(pi.Quantity), 0) AS TotalQuantity
+FROM product AS p
+LEFT JOIN productinventory AS pi
+	ON pi.ProductID = p.ProductID
+GROUP BY
+	p.ProductID,
+	p.Name
+ORDER BY
+	TotalQuantity DESC,
+	ProductName;
+

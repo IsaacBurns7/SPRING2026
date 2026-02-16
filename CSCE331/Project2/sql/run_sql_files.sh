@@ -5,9 +5,10 @@ USER="root"
 PASSWORD="pandasw1ths0y"
 DATABASE="adventureworks"
 
+# NOTE: PLEASE CREATE OUT FOLDER BEFORE RUNNING!!
 # Folders
 QUERY_DIR="."       # Root folder containing your 10 category subfolders
-OUT_DIR="../out"     # Folder to save outputs
+OUT_DIR="../out"     # Folder to save outputs. 
 
 # Ensure the base output directory exists
 mkdir -p "$OUT_DIR"
