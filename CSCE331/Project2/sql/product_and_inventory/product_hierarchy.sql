@@ -6,9 +6,9 @@ SELECT
 	pc.ProductCategoryID,
 	pc.Name AS CategoryName
 FROM product AS p
-LEFT JOIN productsubcategory AS ps
+JOIN productsubcategory AS ps 
 	ON ps.ProductSubcategoryID = p.ProductSubcategoryID
-LEFT JOIN productcategory AS pc
+JOIN productcategory AS pc 
 	ON pc.ProductCategoryID = ps.ProductCategoryID
 ORDER BY
 	CategoryName,

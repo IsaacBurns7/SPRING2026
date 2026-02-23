@@ -1,0 +1,236 @@
+
+===== ./customer_and_sales/average_order_value.txt =====
+CustomerID	AccountNumber	CustomerType	AvgOrderValue
+599	AW00000599	S	133739.07
+85	AW00000085	S	109230.41
+278	AW00000278	S	107997.89
+623	AW00000623	S	102120.86
+193	AW00000193	S	97760.15
+72	AW00000072	S	93289.69
+234	AW00000234	S	89427.19
+205	AW00000205	S	88785.5
+239	AW00000239	S	88701.31
+
+===== ./customer_and_sales/avg_amount_by_territory.txt =====
+TerritoryID	TerritoryName	TerritoryGroup	AvgOrderAmount
+3	Central	North America	20542.88
+2	Northeast	North America	19714.13
+5	Southeast	North America	16213.28
+6	Canada	North America	4021.58
+4	Southwest	North America	3885.7
+1	Northwest	North America	3501.29
+7	France	Europe	2713.91
+10	United Kingdom	Europe	2382.95
+8	Germany	Europe	1873.96
+
+===== ./customer_and_sales/count_orders_per_customer.txt =====
+CustomerID	AccountNumber	CustomerType	OrderCount
+1	AW00000001	S	4
+2	AW00000002	S	8
+3	AW00000003	S	12
+4	AW00000004	S	8
+5	AW00000005	S	8
+6	AW00000006	S	4
+7	AW00000007	S	4
+8	AW00000008	S	4
+9	AW00000009	S	7
+
+===== ./customer_and_sales/list_customers_with_orders.txt =====
+CustomerID	AccountNumber	CustomerType	Orders
+1	AW00000001	S	[{"TotalDue": 34722.9906, "OrderDate": "2002-05-01 00:00:00.000000", "SalesOrderID": 46042}, {"TotalDue": 14603.7393, "OrderDate": "2001-08-01 00:00:00.000000", "SalesOrderID": 43860}, {"TotalDue": 26128.8674, "OrderDate": "2001-11-01 00:00:00.000000", "SalesOrderID": 44501}, {"TotalDue": 37643.1378, "OrderDate": "2002-02-01 00:00:00.000000", "SalesOrderID": 45283}]
+2	AW00000002	S	[{"TotalDue": 10184.0774, "OrderDate": "2002-08-01 00:00:00.000000", "SalesOrderID": 46976}, {"TotalDue": 1935.5166, "OrderDate": "2003-05-01 00:00:00.000000", "SalesOrderID": 50216}, {"TotalDue": 3905.2547, "OrderDate": "2003-08-01 00:00:00.000000", "SalesOrderID": 51728}, {"TotalDue": 5469.5941, "OrderDate": "2002-11-01 00:00:00.000000", "SalesOrderID": 47997}, {"TotalDue": 1739.4078, "OrderDate": "2003-02-01 00:00:00.000000", "SalesOrderID": 49054}, {"TotalDue": 908.3199, "OrderDate": "2004-05-01 00:00:00.000000", "SalesOrderID": 69488}, {"TotalDue": 4537.8484, "OrderDate": "2003-11-01 00:00:00.000000", "SalesOrderID": 57044}, {"TotalDue": 4053.9506, "OrderDate": "2004-02-01 00:00:00.000000", "SalesOrderID": 63198}]
+3	AW00000003	S	[{"TotalDue": 44320.5063, "OrderDate": "2003-12-01 00:00:00.000000", "SalesOrderID": 59011}, {"TotalDue": 17051.8292, "OrderDate": "2004-03-01 00:00:00.000000", "SalesOrderID": 65310}, {"TotalDue": 78578.9054, "OrderDate": "2002-09-01 00:00:00.000000", "SalesOrderID": 47439}, {"TotalDue": 56574.3871, "OrderDate": "2002-12-01 00:00:00.000000", "SalesOrderID": 48378}, {"TotalDue": 30829.4534, "OrderDate": "2003-03-01 00:00:00.000000", "SalesOrderID": 49538}, {"TotalDue": 52087.493, "OrderDate": "2003-06-01 00:00:00.000000", "SalesOrderID": 50748}, {"TotalDue": 20504.1755, "OrderDate": "2001-09-01 00:00:00.000000", "SalesOrderID": 44124}, {"TotalDue": 19248.6666, "OrderDate": "2001-12-01 00:00:00.000000", "SalesOrderID": 44791}, {"TotalDue": 20205.6303, "OrderDate": "2002-03-01 00:00:00.000000", "SalesOrderID": 45568}, {"TotalDue": 13034.7793, "OrderDate": "2002-06-01 00:00:00.000000", "SalesOrderID": 46377}, {"TotalDue": 92196.9738, "OrderDate": "2003-09-01 00:00:00.000000", "SalesOrderID": 53616}, {"TotalDue": 34873.5257, "OrderDate": "2004-06-01 00:00:00.000000", "SalesOrderID": 71889}]
+4	AW00000004	S	[{"TotalDue": 74493.3456, "OrderDate": "2004-01-01 00:00:00.000000", "SalesOrderID": 61193}, {"TotalDue": 69032.2562, "OrderDate": "2004-04-01 00:00:00.000000", "SalesOrderID": 67292}, {"TotalDue": 132199.8023, "OrderDate": "2002-10-01 00:00:00.000000", "SalesOrderID": 47658}, {"TotalDue": 107226.5105, "OrderDate": "2003-01-01 00:00:00.000000", "SalesOrderID": 48740}, {"TotalDue": 104017.8946, "OrderDate": "2003-04-01 00:00:00.000000", "SalesOrderID": 49821}, {"TotalDue": 130825.509, "OrderDate": "2002-07-01 00:00:00.000000", "SalesOrderID": 46642}, {"TotalDue": 81071.7428, "OrderDate": "2003-07-01 00:00:00.000000", "SalesOrderID": 51122}, {"TotalDue": 81168.1511, "OrderDate": "2003-10-01 00:00:00.000000", "SalesOrderID": 55233}]
+5	AW00000005	S	[{"TotalDue": 22896.2823, "OrderDate": "2002-09-01 00:00:00.000000", "SalesOrderID": 47436}, {"TotalDue": 10474.4078, "OrderDate": "2002-12-01 00:00:00.000000", "SalesOrderID": 48374}, {"TotalDue": 20402.1159, "OrderDate": "2003-09-01 00:00:00.000000", "SalesOrderID": 53607}, {"TotalDue": 9344.2027, "OrderDate": "2003-03-01 00:00:00.000000", "SalesOrderID": 49534}, {"TotalDue": 10093.8002, "OrderDate": "2003-06-01 00:00:00.000000", "SalesOrderID": 50746}, {"TotalDue": 11856.1061, "OrderDate": "2004-06-01 00:00:00.000000", "SalesOrderID": 71890}, {"TotalDue": 20366.8811, "OrderDate": "2003-12-01 00:00:00.000000", "SalesOrderID": 59014}, {"TotalDue": 8785.0045, "OrderDate": "2004-03-01 00:00:00.000000", "SalesOrderID": 65307}]
+6	AW00000006	S	[{"TotalDue": 617.707, "OrderDate": "2004-03-01 00:00:00.000000", "SalesOrderID": 65287}, {"TotalDue": 602.2606, "OrderDate": "2003-12-01 00:00:00.000000", "SalesOrderID": 59030}, {"TotalDue": 66.2255, "OrderDate": "2003-09-01 00:00:00.000000", "SalesOrderID": 53596}, {"TotalDue": 2361.6403, "OrderDate": "2004-06-01 00:00:00.000000", "SalesOrderID": 71915}]
+7	AW00000007	S	[{"TotalDue": 2706.8117, "OrderDate": "2002-10-01 00:00:00.000000", "SalesOrderID": 47667}, {"TotalDue": 1954.8747, "OrderDate": "2003-01-01 00:00:00.000000", "SalesOrderID": 48765}, {"TotalDue": 1763.9057, "OrderDate": "2003-04-01 00:00:00.000000", "SalesOrderID": 49861}, {"TotalDue": 3944.2243, "OrderDate": "2002-07-01 00:00:00.000000", "SalesOrderID": 46613}]
+8	AW00000008	S	[{"TotalDue": 9617.3352, "OrderDate": "2003-08-01 00:00:00.000000", "SalesOrderID": 51874}, {"TotalDue": 6155.9868, "OrderDate": "2004-02-01 00:00:00.000000", "SalesOrderID": 63220}, {"TotalDue": 9821.9114, "OrderDate": "2003-11-01 00:00:00.000000", "SalesOrderID": 57190}, {"TotalDue": 4744.0479, "OrderDate": "2004-05-01 00:00:00.000000", "SalesOrderID": 69565}]
+9	AW00000009	S	[{"TotalDue": 1774.1718, "OrderDate": "2003-08-01 00:00:00.000000", "SalesOrderID": 51758}, {"TotalDue": 648.6228, "OrderDate": "2003-05-01 00:00:00.000000", "SalesOrderID": 50234}, {"TotalDue": 320.6283, "OrderDate": "2002-11-01 00:00:00.000000", "SalesOrderID": 48092}, {"TotalDue": 5418.6714, "OrderDate": "2003-02-01 00:00:00.000000", "SalesOrderID": 49170}, {"TotalDue": 3560.1315, "OrderDate": "2003-11-01 00:00:00.000000", "SalesOrderID": 57072}, {"TotalDue": 4583.9683, "OrderDate": "2004-05-01 00:00:00.000000", "SalesOrderID": 69452}, {"TotalDue": 698.8969, "OrderDate": "2004-02-01 00:00:00.000000", "SalesOrderID": 63234}]
+
+===== ./customer_and_sales/orders_by_territory.txt =====
+TerritoryID	TerritoryName	TerritoryGroup	OrderCount
+9	Australia	Pacific	6843
+4	Southwest	North America	6224
+1	Northwest	North America	4594
+6	Canada	North America	4067
+10	United Kingdom	Europe	3219
+7	France	Europe	2672
+8	Germany	Europe	2623
+5	Southeast	North America	486
+3	Central	North America	385
+
+===== ./customer_and_sales/recent_orders.txt =====
+CustomerID	AccountNumber	CustomerType	SalesOrderID	OrderDate	TotalDue
+11078	AW00011078	I	75084	2004-07-31 00:00:00	132.6
+11927	AW00011927	I	75085	2004-07-31 00:00:00	18.72
+28789	AW00028789	I	75086	2004-07-31 00:00:00	8.78
+11794	AW00011794	I	75087	2004-07-31 00:00:00	38.66
+14680	AW00014680	I	75088	2004-07-31 00:00:00	125.93
+19585	AW00019585	I	75089	2004-07-31 00:00:00	66.82
+27686	AW00027686	I	75090	2004-07-31 00:00:00	82.85
+20601	AW00020601	I	75091	2004-07-31 00:00:00	88.92
+26564	AW00026564	I	75092	2004-07-31 00:00:00	55.22
+
+===== ./customer_and_sales/salesperson_tracking.txt =====
+SalesOrderID	OrderDate	CustomerID	AccountNumber	SalesPersonID	SalesPersonTerritoryID	CommissionPct	TotalDue
+71774	2004-06-01 00:00:00	609	AW00000609	276	4	0.015	972.78
+71775	2004-06-01 00:00:00	595	AW00000595	287	1	0.019	2313.13
+71776	2004-06-01 00:00:00	106	AW00000106	282	6	0.015	87.09
+71777	2004-06-01 00:00:00	128	AW00000128	283	1	0.012	1267.82
+71778	2004-06-01 00:00:00	557	AW00000557	277	3	0.015	1503.98
+71779	2004-06-01 00:00:00	149	AW00000149	268	NULL	0	48425.55
+71780	2004-06-01 00:00:00	340	AW00000340	282	6	0.015	42452.65
+71781	2004-06-01 00:00:00	173	AW00000173	285	10	0.02	29262.41
+71782	2004-06-01 00:00:00	582	AW00000582	276	4	0.015	43962.79
+
+===== ./customer_and_sales/specific_product_buyers.txt =====
+CustomerID	AccountNumber	CustomerType	ProductID	ProductName	SalesOrderID	OrderDate
+11	AW00000011	S	710	Mountain Bike Socks, L	46035	2002-05-01 00:00:00
+11	AW00000011	S	709	Mountain Bike Socks, M	46035	2002-05-01 00:00:00
+11	AW00000011	S	710	Mountain Bike Socks, L	44495	2001-11-01 00:00:00
+17	AW00000017	S	710	Mountain Bike Socks, L	45796	2002-04-01 00:00:00
+17	AW00000017	S	709	Mountain Bike Socks, M	45796	2002-04-01 00:00:00
+17	AW00000017	S	709	Mountain Bike Socks, M	45056	2002-01-01 00:00:00
+17	AW00000017	S	710	Mountain Bike Socks, L	44297	2001-10-01 00:00:00
+17	AW00000017	S	710	Mountain Bike Socks, L	43676	2001-07-01 00:00:00
+17	AW00000017	S	709	Mountain Bike Socks, M	43676	2001-07-01 00:00:00
+
+===== ./customer_and_sales/top_10_customers.txt =====
+CustomerID	AccountNumber	CustomerType	TotalSales
+697	AW00000697	S	877107.19
+170	AW00000170	S	853849.18
+678	AW00000678	S	841908.77
+328	AW00000328	S	816755.58
+514	AW00000514	S	799277.9
+155	AW00000155	S	787773.04
+72	AW00000072	S	746317.53
+433	AW00000433	S	740985.83
+227	AW00000227	S	730798.71
+
+===== ./customer_and_sales/total_sales_per_customer.txt =====
+CustomerID	AccountNumber	CustomerType	OrderCount	TotalSales
+697	AW00000697	S	12	877107.19
+170	AW00000170	S	12	853849.18
+678	AW00000678	S	12	841908.77
+328	AW00000328	S	12	816755.58
+514	AW00000514	S	12	799277.9
+155	AW00000155	S	12	787773.04
+72	AW00000072	S	8	746317.53
+433	AW00000433	S	12	740985.83
+227	AW00000227	S	12	730798.71
+
+===== ./example_out.txt =====
+
+===== ./customer_and_sales/average_order_value.txt =====
+CustomerID	AccountNumber	CustomerType	AvgOrderValue
+599	AW00000599	S	133739.07
+85	AW00000085	S	109230.41
+278	AW00000278	S	107997.89
+623	AW00000623	S	102120.86
+193	AW00000193	S	97760.15
+72	AW00000072	S	93289.69
+234	AW00000234	S	89427.19
+
+===== ./product_and_inventory/above_average_price.txt =====
+ProductID	ProductName	ListPrice
+750	Road-150 Red, 44	3578.27
+751	Road-150 Red, 48	3578.27
+752	Road-150 Red, 52	3578.27
+753	Road-150 Red, 56	3578.27
+749	Road-150 Red, 62	3578.27
+771	Mountain-100 Silver, 38	3399.99
+772	Mountain-100 Silver, 42	3399.99
+773	Mountain-100 Silver, 44	3399.99
+774	Mountain-100 Silver, 48	3399.99
+
+===== ./product_and_inventory/avg_price_by_category.txt =====
+ProductCategoryID	CategoryName	AvgListPrice	ProductCount
+1	Bikes	1586.737010309279	97
+2	Components	469.86029850746263	134
+3	Clothing	50.99142857142857	35
+4	Accessories	34.34896551724139	29
+-1	Uncategorized	6.852631578947368	209
+
+===== ./product_and_inventory/keyword_search_bike.txt =====
+ProductID	ProductName	ListPrice
+879	All-Purpose Bike Stand	159
+877	Bike Wash - Dissolver	7.95
+876	Hitch Rack - 4-Bike	120
+710	Mountain Bike Socks, L	9.5
+709	Mountain Bike Socks, M	9.5
+
+===== ./product_and_inventory/low_stock_alerts.txt =====
+ProductID	ProductName	ReorderPoint	TotalQuantity
+859	Half-Finger Gloves, M	3	0
+876	Hitch Rack - 4-Bike	3	0
+743	HL Mountain Frame - Black, 42	375	0
+744	HL Mountain Frame - Black, 44	375	0
+746	HL Mountain Frame - Black, 46	375	0
+745	HL Mountain Frame - Black, 48	375	0
+739	HL Mountain Frame - Silver, 42	375	0
+740	HL Mountain Frame - Silver, 44	375	0
+742	HL Mountain Frame - Silver, 46	375	0
+
+===== ./product_and_inventory/multi_vendor_products.txt =====
+ProductID	ProductName	VendorCount
+322	Chainring	3
+320	Chainring Bolts	3
+321	Chainring Nut	3
+409	External Lock Washer 1	3
+403	External Lock Washer 3	3
+404	External Lock Washer 4	3
+406	External Lock Washer 5	3
+408	External Lock Washer 6	3
+407	External Lock Washer 7	3
+
+===== ./product_and_inventory/product_count_by_category.txt =====
+ProductCategoryID	CategoryName	ProductCount
+-1	Uncategorized	209
+2	Components	134
+1	Bikes	97
+3	Clothing	35
+4	Accessories	29
+
+===== ./product_and_inventory/product_hierarchy.txt =====
+ProductID	ProductName	ProductSubcategoryID	SubcategoryName	ProductCategoryID	CategoryName
+876	Hitch Rack - 4-Bike	26	Bike Racks	4	Accessories
+879	All-Purpose Bike Stand	27	Bike Stands	4	Accessories
+871	Mountain Bottle Cage	28	Bottles and Cages	4	Accessories
+872	Road Bottle Cage	28	Bottles and Cages	4	Accessories
+870	Water Bottle - 30 oz.	28	Bottles and Cages	4	Accessories
+877	Bike Wash - Dissolver	29	Cleaners	4	Accessories
+878	Fender Set - Mountain	30	Fenders	4	Accessories
+708	Sport-100 Helmet, Black	31	Helmets	4	Accessories
+711	Sport-100 Helmet, Blue	31	Helmets	4	Accessories
+
+===== ./product_and_inventory/products_never_sold.txt =====
+ProductID	ProductName
+1	Adjustable Race
+3	BB Ball Bearing
+2	Bearing Ball
+316	Blade
+324	Chain Stays
+322	Chainring
+320	Chainring Bolts
+321	Chainring Nut
+505	Cone-Shaped Race
+
+===== ./product_and_inventory/top_5_ordered_products.txt =====
+ProductID	ProductName	TotalOrderedQuantity
+712	AWC Logo Cap	8311
+870	Water Bottle - 30 oz.	6815
+711	Sport-100 Helmet, Blue	6743
+715	Long-Sleeve Logo Jersey, L	6592
+708	Sport-100 Helmet, Black	6532
+
+===== ./product_and_inventory/total_stock_per_product.txt =====
+ProductID	ProductName	TotalQuantity
+379	Hex Nut 7	1911
+383	Hex Nut 23	1901
+367	Thin-Jam Hex Nut 3	1901
+387	Hex Nut 10	1888
+393	Hex Nut 14	1880
+489	Metal Tread Plate	1837
+396	Hex Nut 18	1824
+389	Hex Nut 2	1808
+376	Hex Nut 6	1781

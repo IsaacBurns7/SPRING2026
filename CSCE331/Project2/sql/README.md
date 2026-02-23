@@ -1,5 +1,6 @@
 cat contents
- find . -name '*.sql' -type f -print0 | sort -z | xargs -0 -I{} sh -c 'printf "\n===== %s =====\n" "{}"; cat "{}"' > output.txt
+find . -name '*.sql' -type f -print0 | sort -z | xargs -0 -I{} sh -c 'printf "\n===== %s =====\n" "{}"; cat "{}"' > output.txt
+cd /Users/kingisaac/Github/SPRING2026/CSCE331/Project2/out && find . -name '*.txt' -type f -print0 | sort -z | xargs -0 -I{} sh -c 'printf "\n===== %s =====\n" "{}"; head -n 10 "{}"'
 
 This folder contains a list of queries against the AdventureWorks database.
 
