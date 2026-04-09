@@ -36,13 +36,18 @@ def generate_sample(model, tokenizer, conditions, max_length):
             # Generate one token at a time, and append it to the input to do generation iteratively until </s> is generated
             # hint: use the "sample_from_logits" function to sample the next token based on model's output (logits)
             ### YOUR CODE HERE ###
+            outputs = model(input_ids)
+            logits = outputs[:, -1, :] #last in sequence dimension
+            next_token = sample_from_logits(logits, temp=1)
+            #append sampled token to the sequence for next iteration >< (along the sequence dimension)
+            input_ids = torch.cat([input_ids, next_token], dim=1) 
 
             # hint: uncomment the following finishing conditions
-            # if next_token.item() == tokenizer.vocab["</s>"] or next_token.item() == tokenizer.vocab["<pad>"]:
-            #     break
+            if next_token.item() == tokenizer.vocab["</s>"] or next_token.item() == tokenizer.vocab["<pad>"]:
+                break
             ### YOUR CODE HERE ###
             
-            pass # Comment this line after you implemented your code
+            #pass # Comment this line after you implemented your code
 
 
     generated_text = tokenizer.decode(input_ids[0][len_conditions:])

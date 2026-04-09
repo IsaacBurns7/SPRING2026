@@ -35,27 +35,40 @@ class CSABlock(nn.Module):
         self.n_head = config.n_head
 
     def forward(self, x, layer_past=None):
-        B, L, C = x.size()
+        B, L, C = x.size() #batch, sequence length, channel(embedding dimension)
 
         # Q, K, V for all heads
         ### YOUR CODE HERE ###
+        Q = self.Q_proj(x)
+        K = self.K_proj(x)
+        V = self.V_proj(x)
+
+        #(B,L,C) -> (B, n_head, T, head_dim) - split embedding layer across multi-headed attention
+        head_dim  = C // self.n_head 
+        Q = Q.view(B, L, self.n_head, head_dim).transpose(1,2)
+        K = K.view(B, L, self.n_head, head_dim).transpose(1,2)
+        V = V.view(B, L, self.n_head, head_dim).transpose(1,2)
 
         ### YOUR CODE HERE ###
 
         # Causal self-attention
         # hint: apply causal mask by using the PyTorch function "masked_fill" with value float('-inf') on attention scores, then apply softmax
         ### YOUR CODE HERE ###
-
+        #compute all heads of attention in parallel 
+        scores = Q @ K.transpose(-2, -1) * (1.0 / math.sqrt(head_dim))
+        scores = scores.masked_fill(self.mask[:, :, :L, :L] == 0, float('-inf'))
 
         ### YOUR CODE HERE ###
-
-        attn_save = att
+        att = torch.softmax(scores, dim = -1) #apply softmax along last dim, which represents one sample 
+        attn_save = att #save before dropout
         # attention dropout
         att = self.attn_drop(att)
 
         # Apply the attention to the values; Combine all head outputs
         ### YOUR CODE HERE ###
-
+        y = att @ V #B, n_head, L, head_dim  
+        y = y.transpose(1,2).contiguous() # (B, L, n_head, head_dim)
+        y = y.view(B,L,C) #B, L, n_embd
         ### YOUR CODE HERE ###
 
         # Readout projection
