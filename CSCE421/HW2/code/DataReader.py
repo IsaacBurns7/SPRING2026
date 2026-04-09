@@ -44,27 +44,31 @@ def prepare_X(raw_X):
     """
     raw_image = raw_X.reshape((-1, 16, 16))
 
-	# Feature 1: Measure of Symmetry
-	### YOUR CODE HERE
+    n_samples = raw_image.shape[0]
+    X_all = np.zeros((n_samples, 3))
+    for i in range(n_samples):
+        img = raw_image[i]
+        # Feature 1: Measure of Symmetry
+        F_symmetry = -np.sum(np.abs(img - np.flip(img, 1))) / img.size
 
-	### END YOUR CODE
+        # Feature 2: Measure of Intensity
+        ### YOUR CODE HERE
+        F_intensity = np.sum(img) / img.size	
+        ### END YOUR CODE
 
-	# Feature 2: Measure of Intensity
-	### YOUR CODE HERE
+        # Feature 3: Bias Term. Always 1.
+        # d) We need this because it matches with the bias in the weights vector. 
+        # If it did not exist, that term in the weight vector would do nothing
+        # and our model would always have to pass through the origin, and could not shift.
+        ### YOUR CODE HERE
+        F_bias = 1 
+        ### END YOUR CODE
 
-	### END YOUR CODE
-
-	# Feature 3: Bias Term. Always 1.
-	### YOUR CODE HERE
-
-	### END YOUR CODE
-
-	# Stack features together in the following order.
-	# [Feature 3, Feature 1, Feature 2]
-	### YOUR CODE HERE
-
-	### END YOUR CODE
-    return X
+        # Stack features together in the following order.
+        # [Feature 3, Feature 1, Feature 2]
+        ### YOUR CODE HERE
+        X_all[i] = [F_bias, F_symmetry, F_intensity]
+    return X_all 
 
 def prepare_y(raw_y):
     """

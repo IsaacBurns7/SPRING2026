@@ -1,0 +1,2 @@
+No Batch Norm + rescaling: 0.5879
+Batch Norm + Normalization + Dropout: 0.6737

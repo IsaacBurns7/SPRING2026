@@ -1,0 +1,21 @@
+Epoch 1 Validation Acc 0.5124
+Epoch 2 Validation Acc 0.5466
+Epoch 3 Validation Acc 0.5874
+Epoch 4 Validation Acc 0.6104
+Epoch 5 Validation Acc 0.6242
+Epoch 6 Validation Acc 0.6354
+Epoch 7 Validation Acc 0.6354
+Epoch 8 Validation Acc 0.6436
+Epoch 9 Validation Acc 0.6586
+Epoch 10 Validation Acc 0.6544
+Epoch 11 Validation Acc 0.6612
+Epoch 12 Validation Acc 0.6650
+Epoch 13 Validation Acc 0.6690
+Epoch 14 Validation Acc 0.6758
+Epoch 15 Validation Acc 0.6742
+Epoch 16 Validation Acc 0.6774
+Epoch 17 Validation Acc 0.6796
+Epoch 18 Validation Acc 0.6662
+Epoch 19 Validation Acc 0.6868
+Epoch 20 Validation Acc 0.6836
+Test accuracy: 0.6737
