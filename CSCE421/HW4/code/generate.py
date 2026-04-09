@@ -26,7 +26,8 @@ def sample_from_logits(logits, temp=1.0):
 def generate_sample(model, tokenizer, conditions, max_length):
     model.eval()
     input_ids = tokenizer.generation_encode(conditions)
-    device = "mps" if torch.backends.mps.is_available() else "cpu"
+    # device = "mps" if torch.backends.mps.is_available() else "cpu"
+    device = "cpu"
     input_ids = torch.tensor([input_ids], dtype=torch.long).to(device)
     len_conditions = len(input_ids[0])
 
@@ -37,7 +38,8 @@ def generate_sample(model, tokenizer, conditions, max_length):
             # hint: use the "sample_from_logits" function to sample the next token based on model's output (logits)
             ### YOUR CODE HERE ###
             outputs = model(input_ids)
-            logits = outputs[:, -1, :] #last in sequence dimension
+            logits_tensor = outputs[0] #batch, seq_len, vocab_size tensor
+            logits = logits_tensor[:, -1, :]
             next_token = sample_from_logits(logits, temp=1)
             #append sampled token to the sequence for next iteration >< (along the sequence dimension)
             input_ids = torch.cat([input_ids, next_token], dim=1) 

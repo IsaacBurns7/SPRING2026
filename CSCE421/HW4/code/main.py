@@ -9,7 +9,11 @@ from generate import generate
 from train import train
 
 #python main.py --task train --run_name default > train_default.out 2>&1 &
-#python main.py --task train --run_name medium  --n_layer 3 --n_head 4 --n_embd 128 --max_epochs 20 > train_medium.out 2>&1 &
+#python main.py --task train --run_name medium  --n_layer 4 --n_head 8 --n_embd 128 --max_epochs 20 > train_medium.out 2>&1 &
+
+#for colab skull
+#  !python main.py --task train --run_name default > /content/drive/MyDrive/train_cuda_default.txt 2>&1 &
+#  !python main.py --task train --run_name medium  --n_layer 4 --n_head 8 --n_embd 128 --max_epochs 20 > /content/drive/MyDrive/train_cuda_medium.txt 2>&1 &
 
 def set_seed(seed):
     random.seed(seed)
